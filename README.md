@@ -1,1 +1,1 @@
-teste
+Repositório para guardarmos os arquivos do nosso jogo para a disciplina de EA872.
