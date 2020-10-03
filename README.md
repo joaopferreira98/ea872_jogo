@@ -28,7 +28,7 @@ Em termos de gráficos, seria um jogo 2D, pixelado, possivelmente em preto e bra
 
 ## Referências
 
-Segue a seguir algumas referências de alguns jogos no estilo do proposto, para termos uma base na hora de fazer o nosso projeto:
+Algumas referências de alguns jogos no estilo do proposto, para termos uma base na hora de fazer o nosso projeto:
 
 - [Agar.io, Web, 2015](https://www.youtube.com/watch?v=UBWsbhmA73c) - Referência principal para a jogabilidade, mostra muito bem a dinâmica que eu to pensando de competitivade entre os jogadores;
 
