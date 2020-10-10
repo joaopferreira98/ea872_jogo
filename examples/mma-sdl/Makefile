@@ -4,6 +4,11 @@ CC	= g++
 OBJS = src/mma-sdl.o
 OBJS_TEMPLATE = src/mma-sdl-template.o
 CLASSES = src/dinamicos.cpp
+	  src/equacoes.cpp
+	  src/oscilador.cpp
+	  src/telacalc.cpp
+	  src/texturas.cpp
+	  src/visualizacao.cpp
 HEADER =
 OUT = mma-sdl
 OUT_TEMPLATE = mma-sdl-template
