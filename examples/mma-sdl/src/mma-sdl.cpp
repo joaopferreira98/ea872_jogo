@@ -4,6 +4,8 @@
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
+#include "../include/dinamicos.hpp"
+
 #define TEMPO 0.1
 
 using namespace std;
@@ -12,51 +14,11 @@ using namespace std;
 
 class Texturas{
     private:
-        SDL_Texture *bloco = IMG_LoadTexture(renderer, "textures/bloco.png");
-        SDL_Texture *fundo = IMG_LoadTexture(renderer, "textures/fundo.png");
     public:
         Texturas();
 };
 
 Texturas::Texturas(){
-}
-
-class Dinamicos{
-    private:
-        float tmp, pos, vel, accel;
-    public:
-        Dinamicos();
-        void set_dynamic(float tmp, float pos, float vel, float accel);
-        float get_tmp();
-        float get_pos();
-        float get_vel();
-        float get_accel();
-};
-
-Dinamicos::Dinamicos(){
-}
-
-void Dinamicos::set_dynamic(float tmp, float pos, float vel, float accel){
-    this->tmp = tmp;
-    this->pos = pos;
-    this->vel = vel;
-    this->accel = accel;
-}
-
-float Dinamicos::get_tmp(){
-    return tmp;
-}
-
-float Dinamicos::get_pos(){
-    return pos;
-}
-
-float Dinamicos::get_vel(){
-    return vel;
-}
-
-float Dinamicos::get_accel(){
-    return accel;
 }
 
 class Oscilador{
@@ -99,11 +61,6 @@ float Oscilador::get_dmp(){
 
 /* VIEW */
 
-class SDL_View{
-    private:
-    public:
-};
-
 class Visualizacao{
     public:
         Visualizacao();
@@ -126,26 +83,6 @@ void Visualizacao::pixel_pos(int x, int y){
 }
 
 /* CONTROLLER */
-
-class SDL_Inicializar{
-    private:
-    public:
-        SDL_Inicializar();
-        void window_create();
-        void window_destroy();
-};
-
-SDL_Inicializar::SDL_Inicializar(){
-    if (SDL_Init (SDL_INIT_VIDEO) < 0){
-        std::cout << SDL_GetError();
-        return 1;
-    }
-}
-
-class SDL_Render{
-    private:
-    public:
-}
 
 class Equacoes{
     private:
