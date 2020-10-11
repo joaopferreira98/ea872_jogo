@@ -1,43 +1,55 @@
+/* bibliotecas que iremos utilizar */
 #include <iostream>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
+/* header file dessa classe */
 #include "../include/sdl-render.hpp"
 
+/* utiliz o namespace std pra simplificar alguns comandos */
 using namespace std;
 
+/* definicoes do tamanho da tela */
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
+/* o construtor da classe incializa o modulo view do SDL */
 SDLRender::SDLRender(){
-    if ( SDL_Init (SDL_INIT_VIDEO) < 0 ){
-        std::cout << SDL_GetError();
+    if ((SDL_Init(SDL_INIT_VIDEO)) < 0 ){
+        cout << SDL_GetError();
     }
 }
 
-void SDLRender::window_init(){
-    SDL_Window* window = nullptr;
-    window = SDL_CreateWindow("Demonstracao do SDL2",
+int SDLRender::window_init(){
+    /* inicializa a janela com os parametros definidos */
+    this->window = nullptr;
+    this->window = SDL_CreateWindow("Demonstracao do SDL2",
     SDL_WINDOWPOS_UNDEFINED,
     SDL_WINDOWPOS_UNDEFINED,
     SCREEN_WIDTH,
     SCREEN_HEIGHT,
     SDL_WINDOW_SHOWN);
-    if (window==nullptr){
-        std::cout << SDL_GetError();
-        SDL_Quit();
-        return;
-    }
-}
 
-void SDLRender::render_init(){
-    SDL_Renderer* renderer = SDL_CreateRenderer(
-    window, -1,
-    SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
-    if (renderer==nullptr) { // Em caso de erro...
-        SDL_DestroyWindow(window);
-        std::cout << SDL_GetError();
+    /* checa se teve algum problema na hora de criar a janela */
+    if (this->window==nullptr){
+        cout << SDL_GetError();
         SDL_Quit();
         return 1;
     }
+    return 0;
+}
+
+int SDLRender::render_init(){
+    /* inicializa o renderer com os parametros definidos */
+    this->renderer = SDL_CreateRenderer(this->window, -1,
+    SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+
+    /* checa se houve algum problema na hora de criar o renderer */
+    if (this->renderer == nullptr){ 
+        SDL_DestroyWindow(this->window);
+        cout << SDL_GetError();
+        SDL_Quit();
+        return 1;
+    }
+    return 0;
 }

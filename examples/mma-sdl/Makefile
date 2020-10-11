@@ -4,6 +4,7 @@ CC	= g++
 OBJS = src/mma-sdl.o
 OBJS_TEMPLATE = src/mma-sdl-template.o
 CLASSES = src/dinamicos.cpp src/equacoes.cpp src/oscilador.cpp src/telacalc.cpp src/texturas.cpp src/visualizacao.cpp
+SDL_CLASSES = src/sdl-render.cpp
 HEADER =
 OUT = mma-sdl
 OUT_TEMPLATE = mma-sdl-template
@@ -12,7 +13,7 @@ TARGET_TEMPLATE = ./mma-sdl-template
 
 # gerar os executaveis
 all: $(OBJS)
-	$(CC) $(OBJS) $(CLASSES) -o $(OUT)
+	$(CC) $(OBJS) $(CLASSES) $(SDL_CLASSES) -o $(OUT)
 
 old: $(OBJS_TEMPLATE)
 	$(CC) $(OBJS_TEMPLATE) -o $(OUT_TEMPLATE)
