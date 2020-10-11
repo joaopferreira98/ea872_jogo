@@ -1,4 +1,14 @@
+#include <memory>
+#include <cmath>
+
 #include "../include/equacoes.hpp"
+#include "../include/oscilador.hpp"
+#include "../include/dinamicos.hpp"
+#include "../include/visualizacao.hpp"
+
+#define TEMPO 0.1
+
+using namespace std;
 
 Equacoes::Equacoes(shared_ptr<Dinamicos> dynamics, shared_ptr<Oscilador> oscillator, shared_ptr<Visualizacao> view):
     // Lista de inicializacao

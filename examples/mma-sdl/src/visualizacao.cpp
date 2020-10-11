@@ -1,4 +1,8 @@
+#include <iostream>
+
 #include "../include/visualizacao.hpp"
+
+using namespace std;
 
 Visualizacao::Visualizacao(){
 }

@@ -1,4 +1,11 @@
+#include <iostream>
+
+#include "dinamicos.hpp"
+#include "visualizacao.hpp"
+
 #pragma once
+
+using namespace std;
 
 class TelaCalc{
     private:

@@ -8,9 +8,8 @@
 #include "../include/oscilador.hpp"
 #include "../include/visualizacao.hpp"
 #include "../include/equacoes.hpp"
+#include "../include/telacalc.hpp"
 #include "../include/texturas.hpp"
-
-#define TEMPO 0.1
 
 using namespace std;
 

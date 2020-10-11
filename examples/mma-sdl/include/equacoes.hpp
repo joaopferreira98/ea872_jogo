@@ -1,4 +1,12 @@
+#include <memory>
+
+#include "dinamicos.hpp"
+#include "oscilador.hpp"
+#include "visualizacao.hpp"
+
 #pragma once
+
+using namespace std;
 
 class Equacoes{
     private:

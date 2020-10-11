@@ -1,4 +1,10 @@
+#include <memory>
+
 #include "../include/telacalc.hpp"
+#include "../include/dinamicos.hpp"
+#include "../include/visualizacao.hpp"
+
+using namespace std;
 
 TelaCalc::TelaCalc(shared_ptr<Dinamicos> dynamics, shared_ptr<Visualizacao> view, int escala):
     dynamics(dynamics),
