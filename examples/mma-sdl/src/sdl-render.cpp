@@ -4,8 +4,9 @@
 #include <iostream>
 #include <SDL2/SDL.h>
 
-/* header file dessa classe */
+/* header file dessa classe e a dos ponteiros */
 #include "../include/sdl-render.hpp"
+#include "../include/sdl-ptr.hpp"
 
 /* utiliza o namespace std pra simplificar alguns comandos */
 using namespace std;
@@ -15,7 +16,9 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
 /* o construtor da classe incializa o modulo view do SDL */
-SDLRender::SDLRender(){
+SDLRender::SDLRender(shared_ptr<SDLPointer> sdlptr):
+    sdlptr(sdlptr)    
+{
     if ((SDL_Init(SDL_INIT_VIDEO)) < 0 ){
         cout << SDL_GetError();
     }
@@ -23,23 +26,23 @@ SDLRender::SDLRender(){
 
 /* o destrutor encerra esses processos */
 SDLRender::~SDLRender(){
-    SDL_DestroyRenderer(this->renderer);
-    SDL_DestroyWindow(this->janela);
+    SDL_DestroyRenderer(sdlptr->get_renderer());
+    SDL_DestroyWindow(sdlptr->get_window());
     SDL_Quit();
 }
 
 int SDLRender::window_init(){
     /* inicializa a janela com os parametros definidos */
-    this->janela = nullptr;
-    this->janela = SDL_CreateWindow("Demonstracao do SDL2",
+    sdlptr->set_window(nullptr);
+    sdlptr->set_window(SDL_CreateWindow("Demonstracao do SDL2",
     SDL_WINDOWPOS_UNDEFINED,
     SDL_WINDOWPOS_UNDEFINED,
     SCREEN_WIDTH,
     SCREEN_HEIGHT,
-    SDL_WINDOW_SHOWN);
+    SDL_WINDOW_SHOWN));
 
     /* checa se teve algum problema na hora de criar a janela */
-    if (this->janela==nullptr){
+    if (sdlptr->get_window() == nullptr){
         cout << SDL_GetError();
         SDL_Quit();
         return 1;
@@ -49,12 +52,12 @@ int SDLRender::window_init(){
 
 int SDLRender::render_init(){
     /* inicializa o renderer com os parametros definidos */
-    this->renderer = SDL_CreateRenderer(this->janela, -1,
-    SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
+    sdlptr->set_renderer(SDL_CreateRenderer(sdlptr->get_window(), -1,
+    SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC));
 
     /* checa se houve algum problema na hora de criar o renderer */
-    if (this->renderer == nullptr){ 
-        SDL_DestroyWindow(this->janela);
+    if (sdlptr->get_renderer() == nullptr){ 
+        SDL_DestroyWindow(sdlptr->get_window());
         cout << SDL_GetError();
         SDL_Quit();
         return 1;

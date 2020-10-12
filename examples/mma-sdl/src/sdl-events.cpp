@@ -3,7 +3,7 @@
 /* bibliotecas que iremos utilizar */
 #include <iostream>
 #include <SDL2/SDL.h>
-#include <../include/sdl-position>
+#include <../include/sdl-position.hpp>
 
 /* header file dessa classe */
 #include "../include/sdl-events.hpp"

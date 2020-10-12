@@ -12,6 +12,7 @@
 
 /* classes do SDL */
 #include "../include/sdl-render.hpp"
+#include "../include/sdl-ptr.hpp"
 #include "../include/sdl-textures.hpp"
 #include "../include/sdl-position.hpp"
 #include "../include/sdl-view.hpp"
