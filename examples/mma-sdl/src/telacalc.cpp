@@ -21,8 +21,8 @@ TelaCalc::TelaCalc(shared_ptr<Dinamicos> dynamics, shared_ptr<Visualizacao> view
 
 /* calcula a posicao em pixel baseada numa tela de 200x400 */ 
 void TelaCalc::position(){
-    const int height = 400;
-    const int width = 200;
+    const int height = 640;
+    const int width = 480;
 
     int pos_x = width/2;
     int pos_y = height/2;

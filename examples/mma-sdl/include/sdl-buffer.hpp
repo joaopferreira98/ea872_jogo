@@ -25,6 +25,7 @@ class SDLBuffer{
         shared_ptr<SDLView> const sdlview; /* visualizacao */
     public:
         SDLBuffer(shared_ptr<SDLPosition> sdlpos, shared_ptr<SDLPointer> sdlptr, shared_ptr<SDLTextures> sdltextures, shared_ptr<SDLView> sdlview);
+        void buffer_update();
         void det_tex(const char* tex_path); /* configura a textura do bloco */
         ~SDLBuffer();
 };

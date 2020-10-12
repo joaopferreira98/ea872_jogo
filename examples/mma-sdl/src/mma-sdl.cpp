@@ -16,6 +16,7 @@
 #include "../include/sdl-textures.hpp"
 #include "../include/sdl-position.hpp"
 #include "../include/sdl-view.hpp"
+#include "../include/sdl-buffer.hpp"
 
 /* utiliza o namespace sdl para facilitar alguns comandos */
 using namespace std;
@@ -27,6 +28,9 @@ int main(){
     unique_ptr<Equacoes> modelo (new Equacoes(dynamics, oscillator, view)); /* classe para as equacoes */
     unique_ptr<TelaCalc> pixel_calc (new TelaCalc(dynamics, view, 10)); /* classe para calcular a posicao na tela */
 
+    shared_ptr<SDLPointer> sdlptr (new SDLPointer);
+    unique_ptr<SDLRender> render (new SDLRender(sdlptr));
+
     modelo->parametros_dinamicos(0.0, 10.0, 0, 0); /* parametros dinamicos iniciais da massa */
     modelo->parametros_sistema(5.0, 10.0, 5.0, 10.0); /* parametros do oscilador */
 
@@ -35,6 +39,7 @@ int main(){
         modelo->calculo();
         pixel_calc->position();
     }
+
 
     return 0;
 }

@@ -1,6 +1,7 @@
 /* CONTROLLER */ 
 
 /* bibliotecas que essa classe vai utilizar em suas funcoes */
+#include <memory>
 #include <SDL2/SDL.h>
 #include <SDL2/SDL_image.h>
 
@@ -20,17 +21,21 @@ SDLBuffer::SDLBuffer(shared_ptr<SDLPosition> sdlpos, shared_ptr<SDLPointer> sdlp
 {
     target.x = 0;
     target.y = 0;
-
-    SDL_QueryTexture(sdltextures->get_texture(), nullptr, nullptr, &target.w, &target.h); /* inicializa a posicao inicial da textura */
 }
 
 /* atualiza o buffer */
+void SDLBuffer::buffer_update(){
+    SDL_RenderClear(sdlptr->get_renderer());
+    SDL_RenderCopy(sdlptr->get_renderer(), sdltextures->get_texture(), nullptr, &target);
+    sdlview->scene_draw(sdlptr->get_renderer());
 
+    SDL_Delay(10);
+}
 
 /* define a textura */
-
 void SDLBuffer::det_tex(const char* tex_path){
     sdltextures->set_texture(IMG_LoadTexture(sdlptr->get_renderer(), tex_path));
+    SDL_QueryTexture(sdltextures->get_texture(), nullptr, nullptr, &target.w, &target.h); /* inicializa a posicao inicial da textura */
 }
 
 /* o destrutor dessa classe vai limpar o buffer */
