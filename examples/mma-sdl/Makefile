@@ -1,6 +1,7 @@
 
 # definicoes
-CC	= g++
+CC = g++
+SDL_FLAGS = -lSDL2 -lSDL2_image
 OBJS = src/mma-sdl.o
 OBJS_TEMPLATE = src/mma-sdl-template.o
 CLASSES = src/dinamicos.cpp src/equacoes.cpp src/oscilador.cpp src/telacalc.cpp src/texturas.cpp src/visualizacao.cpp
@@ -13,7 +14,7 @@ TARGET_TEMPLATE = ./mma-sdl-template
 
 # gerar os executaveis
 all: $(OBJS)
-	$(CC) $(OBJS) $(CLASSES) $(SDL_CLASSES) -o $(OUT)
+	$(CC) $(OBJS) $(CLASSES) $(SDL_CLASSES) $(SDL_FLAGS) -o $(OUT)
 
 old: $(OBJS_TEMPLATE)
 	$(CC) $(OBJS_TEMPLATE) -o $(OUT_TEMPLATE)
