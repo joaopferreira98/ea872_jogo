@@ -1,3 +1,5 @@
+/* CONTROLLER */
+
 /* bibliotecas que essa classe utiliza em suas definicoes */
 #include <SDL2/SDL.h>
 

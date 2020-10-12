@@ -1,3 +1,5 @@
+/* MODEL */
+
 /* bibliotecas que iremos utilizar */
 #include <SDL2/SDL.h>
 
