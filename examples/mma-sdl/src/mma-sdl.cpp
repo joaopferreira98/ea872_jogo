@@ -14,6 +14,7 @@
 #include "../include/sdl-render.hpp"
 #include "../include/sdl-textures.hpp"
 #include "../include/sdl-position.hpp"
+#include "../include/sdl-view.hpp"
 
 /* utiliza o namespace sdl para facilitar alguns comandos */
 using namespace std;

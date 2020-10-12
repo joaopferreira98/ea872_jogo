@@ -1,7 +1,7 @@
 /* MODEL */
 
 /* para evitar conflitos de nome */
-#pragma once;
+#pragma once
 
 /* essa classe vai armazenar a posicao em pixel na janela para o SDL exibir a textura no local correto */
 class SDLPosition{
