@@ -28,18 +28,31 @@ int main(){
     unique_ptr<Equacoes> modelo (new Equacoes(dynamics, oscillator, view)); /* classe para as equacoes */
     unique_ptr<TelaCalc> pixel_calc (new TelaCalc(dynamics, view, 10)); /* classe para calcular a posicao na tela */
 
+    /* classes do sdl */
     shared_ptr<SDLPointer> sdlptr (new SDLPointer);
-    unique_ptr<SDLRender> render (new SDLRender(sdlptr));
+    shared_ptr<SDLTextures> sdltex (new SDLTextures);
+    shared_ptr<SDLPosition> sdlpos (new SDLPosition);
+    shared_ptr<SDLView> sdlview (new SDLView);
+    unique_ptr<SDLRender> sdlrender (new SDLRender(sdlptr));
+    unique_ptr<SDLBuffer> sdlbuffer (new SDLBuffer(sdlpos, sdlptr, sdltex, sdlview));
 
     modelo->parametros_dinamicos(0.0, 10.0, 0, 0); /* parametros dinamicos iniciais da massa */
     modelo->parametros_sistema(5.0, 10.0, 5.0, 10.0); /* parametros do oscilador */
 
+    sdlrender->window_init();
+    sdlrender->render_init();
+
+    sdlbuffer->det_tex("../assets/mass.png");
+
     /* faz n iteracoes pra simulacao */
-    for (int n = 0; n <= 200; n++){
+    /* for (int n = 0; n <= 200; n++){
         modelo->calculo();
         pixel_calc->position();
-    }
+    } */
 
+    while(1){
+        sdlbuffer->buffer_update();
+    }
 
     return 0;
 }

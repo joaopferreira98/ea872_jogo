@@ -25,7 +25,7 @@ SDLBuffer::SDLBuffer(shared_ptr<SDLPosition> sdlpos, shared_ptr<SDLPointer> sdlp
 
 /* atualiza o buffer */
 void SDLBuffer::buffer_update(){
-    SDL_RenderClear(sdlptr->get_renderer());
+    sdlview->scene_clear(sdlptr->get_renderer());
     SDL_RenderCopy(sdlptr->get_renderer(), sdltextures->get_texture(), nullptr, &target);
     sdlview->scene_draw(sdlptr->get_renderer());
 
