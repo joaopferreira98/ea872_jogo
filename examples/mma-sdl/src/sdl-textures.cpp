@@ -10,3 +10,8 @@
 void SDLTextures::set_texture(SDL_Texture* textura){
     this->textura = textura;
 }
+
+/* funcao para retornar o endereco da textura armazenada */
+SDL_Texture* SDLTextures::get_texture(){
+    return textura;
+}
