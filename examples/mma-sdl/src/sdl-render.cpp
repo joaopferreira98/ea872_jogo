@@ -1,7 +1,6 @@
 /* bibliotecas que iremos utilizar */
 #include <iostream>
 #include <SDL2/SDL.h>
-#include <SDL2/SDL_image.h>
 
 /* header file dessa classe */
 #include "../include/sdl-render.hpp"
