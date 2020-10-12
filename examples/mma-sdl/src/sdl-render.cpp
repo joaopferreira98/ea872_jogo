@@ -6,7 +6,7 @@
 /* header file dessa classe */
 #include "../include/sdl-render.hpp"
 
-/* utiliz o namespace std pra simplificar alguns comandos */
+/* utiliza o namespace std pra simplificar alguns comandos */
 using namespace std;
 
 /* definicoes do tamanho da tela */
@@ -18,6 +18,13 @@ SDLRender::SDLRender(){
     if ((SDL_Init(SDL_INIT_VIDEO)) < 0 ){
         cout << SDL_GetError();
     }
+}
+
+/* o destrutor encerra esses processos */
+SDLRender::~SDLRender(){
+    SDL_DestroyRenderer(this->renderer);
+    SDL_DestroyWindow(this->window);
+    SDL_Quit();
 }
 
 int SDLRender::window_init(){

@@ -9,4 +9,5 @@ class SDLRender{
         SDLRender();
         int window_init();
         int render_init();
+        ~SDLRender();
 };
