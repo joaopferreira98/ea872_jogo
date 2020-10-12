@@ -10,7 +10,7 @@
 
 /* classes do SDL */
 #include "../include/sdl-render.hpp"
-// #include "../include/sdl-textures.hpp"
+#include "../include/sdl-textures.hpp"
 
 /* utiliza o namespace sdl para facilitar alguns comandos */
 using namespace std;

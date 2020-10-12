@@ -7,7 +7,7 @@
 
 class SDLTextures{
     private:
-        SDL_Texture *texture; /* struct para armazenar as texturas*/
+        SDL_Texture *textura; /* struct para armazenar as texturas*/
     public:
-        void set_texture(const char textura); /* funcao para definir a textura a ser armazenada pela classe */
+        void set_texture(SDL_Texture *textura); /* funcao para definir a textura a ser armazenada pela classe */
 };

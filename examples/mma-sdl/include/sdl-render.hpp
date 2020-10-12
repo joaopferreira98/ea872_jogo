@@ -6,7 +6,7 @@
 
 class SDLRender{
     private:
-        SDL_Window* window; /* struct da janela */
+        SDL_Window* janela; /* struct da janela */
         SDL_Renderer* renderer; /* struct do renderer */
     public:
         SDLRender(); /* inicializa o sistema do SDL */

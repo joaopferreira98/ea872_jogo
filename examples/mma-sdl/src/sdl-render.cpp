@@ -22,14 +22,14 @@ SDLRender::SDLRender(){
 /* o destrutor encerra esses processos */
 SDLRender::~SDLRender(){
     SDL_DestroyRenderer(this->renderer);
-    SDL_DestroyWindow(this->window);
+    SDL_DestroyWindow(this->janela);
     SDL_Quit();
 }
 
 int SDLRender::window_init(){
     /* inicializa a janela com os parametros definidos */
-    this->window = nullptr;
-    this->window = SDL_CreateWindow("Demonstracao do SDL2",
+    this->janela = nullptr;
+    this->janela = SDL_CreateWindow("Demonstracao do SDL2",
     SDL_WINDOWPOS_UNDEFINED,
     SDL_WINDOWPOS_UNDEFINED,
     SCREEN_WIDTH,
@@ -37,7 +37,7 @@ int SDLRender::window_init(){
     SDL_WINDOW_SHOWN);
 
     /* checa se teve algum problema na hora de criar a janela */
-    if (this->window==nullptr){
+    if (this->janela==nullptr){
         cout << SDL_GetError();
         SDL_Quit();
         return 1;
@@ -47,12 +47,12 @@ int SDLRender::window_init(){
 
 int SDLRender::render_init(){
     /* inicializa o renderer com os parametros definidos */
-    this->renderer = SDL_CreateRenderer(this->window, -1,
+    this->renderer = SDL_CreateRenderer(this->janela, -1,
     SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC);
 
     /* checa se houve algum problema na hora de criar o renderer */
     if (this->renderer == nullptr){ 
-        SDL_DestroyWindow(this->window);
+        SDL_DestroyWindow(this->janela);
         cout << SDL_GetError();
         SDL_Quit();
         return 1;
