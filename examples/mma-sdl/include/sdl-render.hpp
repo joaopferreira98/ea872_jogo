@@ -6,8 +6,8 @@ class SDLRender{
         SDL_Window* window; /* struct da janela */
         SDL_Renderer* renderer; /* struct do renderer */
     public:
-        SDLRender();
-        int window_init();
-        int render_init();
-        ~SDLRender();
+        SDLRender(); /* inicializa o sistema do SDL */
+        int window_init(); /* inicializa a janela */
+        int render_init(); /* iniciliza o renderizador */
+        ~SDLRender(); /* encerra esses processos */
 };

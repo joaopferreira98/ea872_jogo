@@ -1,11 +1,15 @@
+/* pra utilizar o 'shared_ptr' */
 #include <memory>
 
+/* header files que estao relacionados com essa classe */
 #include "dinamicos.hpp"
 #include "oscilador.hpp"
 #include "visualizacao.hpp"
 
+/* para evitar conflitos de nome */
 #pragma once
 
+/* para simplificar alguns comandos */
 using namespace std;
 
 class Equacoes{
@@ -14,8 +18,8 @@ class Equacoes{
         shared_ptr<Oscilador> const oscillator;
         shared_ptr<Visualizacao> const view;
     public:
-        Equacoes(shared_ptr<Dinamicos> dynamics, shared_ptr<Oscilador> oscillator, shared_ptr<Visualizacao> view);
-        void parametros_dinamicos(float t_cfg, float p_cfg, float v_cfg, float a_cfg);
-        void parametros_sistema(float m_cfg, float t_cfg, float e_cfg, float d_cfg);
-        void calculo();
+        Equacoes(shared_ptr<Dinamicos> dynamics, shared_ptr<Oscilador> oscillator, shared_ptr<Visualizacao> view); /* inicializa as classes necessarias pra simulacao */
+        void parametros_dinamicos(float t_cfg, float p_cfg, float v_cfg, float a_cfg); /* definir o estado dinamico do bloco */
+        void parametros_sistema(float m_cfg, float t_cfg, float e_cfg, float d_cfg); /* definir os parametros do oscilador */
+        void calculo(); /* aplicar uma iteracao de simulacao */
 };
