@@ -34,7 +34,7 @@ SDLRender::~SDLRender(){
 int SDLRender::window_init(){
     /* inicializa a janela com os parametros definidos */
     sdlptr->set_window(nullptr);
-    sdlptr->set_window(SDL_CreateWindow("Demonstracao do SDL2",
+    sdlptr->set_window(SDL_CreateWindow("Simulador de Sistema Massa-Mola-Amortecedor",
     SDL_WINDOWPOS_UNDEFINED,
     SDL_WINDOWPOS_UNDEFINED,
     SCREEN_WIDTH,

@@ -19,6 +19,7 @@ SDLBuffer::SDLBuffer(shared_ptr<SDLPosition> sdlpos, shared_ptr<SDLPointer> sdlp
     sdltextures(sdltextures),
     sdlview(sdlview)
 {
+    SDL_Rect target;
     target.x = 0;
     target.y = 0;
 }
@@ -26,7 +27,7 @@ SDLBuffer::SDLBuffer(shared_ptr<SDLPosition> sdlpos, shared_ptr<SDLPointer> sdlp
 /* atualiza o buffer */
 void SDLBuffer::buffer_update(){
     sdlview->scene_clear(sdlptr->get_renderer());
-    SDL_RenderCopy(sdlptr->get_renderer(), sdltextures->get_texture(), nullptr, &target);
+    SDL_RenderCopy(sdlptr->get_renderer(), sdltextures->get_texture(), nullptr, nullptr);
     sdlview->scene_draw(sdlptr->get_renderer());
 
     SDL_Delay(10);

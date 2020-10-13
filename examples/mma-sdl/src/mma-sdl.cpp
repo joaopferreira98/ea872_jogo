@@ -2,6 +2,7 @@
 
 /* bibliotecas gerais que iremos utilizar */
 #include <memory>
+#include <SDL2/SDL.h>
 
 /* classes do simulador físico */
 #include "../include/dinamicos.hpp"
@@ -42,7 +43,7 @@ int main(){
     sdlrender->window_init();
     sdlrender->render_init();
 
-    sdlbuffer->det_tex("../assets/mass.png");
+    sdlbuffer->det_tex("./assets/mass.png");
 
     /* faz n iteracoes pra simulacao */
     /* for (int n = 0; n <= 200; n++){
@@ -50,8 +51,25 @@ int main(){
         pixel_calc->position();
     } */
 
-    while(1){
-        sdlbuffer->buffer_update();
+    // Controlador:
+    bool rodando = true;
+
+    // Variaveis para verificar eventos
+    SDL_Event evento; // eventos discretos
+    const Uint8* state = SDL_GetKeyboardState(nullptr); // estado do teclado
+
+    // Laco principal do jogo
+    while(rodando) {
+        // Polling de eventos
+        SDL_PumpEvents(); // atualiza estado do teclado
+
+    while (SDL_PollEvent(&evento)) {
+        if (evento.type == SDL_QUIT) {
+            rodando = false;
+        }
+    }
+    // Desenhar a cena
+    sdlbuffer->buffer_update();
     }
 
     return 0;
