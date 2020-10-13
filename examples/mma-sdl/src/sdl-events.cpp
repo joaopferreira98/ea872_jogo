@@ -1,31 +1,39 @@
 /* CONTROLLER */
 
 /* bibliotecas que iremos utilizar */
-#include <iostream>
 #include <SDL2/SDL.h>
-#include <../include/sdl-position.hpp>
+#include <memory>
+#include "../include/dinamicos.hpp"
+#include "../include/sdl-teclado.hpp"
 
 /* header file dessa classe */
 #include "../include/sdl-events.hpp"
 
 /* o construtor da classe incializa o estado do teclado */
-SDLEvents::SDLEvents(shared_ptr<SDLPosition> pixposition):
-    pixposition(pixposition)
+SDLEvents::SDLEvents(shared_ptr<Dinamicos> dynamics, shared_ptr<SDLTeclado> sdltec):
+    dynamics(dynamics),
+    sdltec(sdltec)
     {
-    this->state = SDL_GetKeyboardState(nullptr);
-    rodando = true;
+    f = dynamics->get_fext();
+    forcaext = 10.0; // forca estabelecida por nos, por enquanto.
 }
 	
 
 void SDLEvents::polling(){
-	while(rodando){
-		SDL_PumpEvents(); // atualiza estado do teclado
-		if (state[SDL_SCANCODE_UP])  pixposition->get_pix_y()-= 1;
-    	if (state[SDL_SCANCODE_DOWN])pixposition->get_pix_y()+= 1;
-   		while(SDL_PollEvent(&evento) != 0){
-	    	if (evento.type == SDL_QUIT) {
-			    rodando = false;
-			}
-		}
-	}
+	if (sdltec->state[SDL_SCANCODE_UP]){
+        f += forcaext;
+        dynamics->set_fext(f);
+    }
+    if (sdltec->state[SDL_SCANCODE_DOWN]){
+        f -= forcaext;
+        dynamics->set_fext(f);
+    }
 }
+
+/*void SDLEvents::eventos(){
+	while (SDL_PollEvent(&evento)) {
+        if (evento.type == SDL_QUIT) {
+            rodando = false;
+        }
+    }
+}*/

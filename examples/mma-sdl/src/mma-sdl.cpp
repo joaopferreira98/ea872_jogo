@@ -3,6 +3,7 @@
 /* bibliotecas gerais que iremos utilizar */
 #include <memory>
 #include <SDL2/SDL.h>
+#include <iostream>
 
 /* classes do simulador físico */
 #include "../include/dinamicos.hpp"
@@ -18,6 +19,8 @@
 #include "../include/sdl-position.hpp"
 #include "../include/sdl-view.hpp"
 #include "../include/sdl-buffer.hpp"
+#include "../include/sdl-teclado.hpp"
+#include "../include/sdl-events.hpp"
 
 /* utiliza o namespace sdl para facilitar alguns comandos */
 using namespace std;
@@ -35,6 +38,8 @@ int main(){
     shared_ptr<SDLView> sdlview (new SDLView);
     unique_ptr<SDLRender> sdlrender (new SDLRender(sdlptr));
     unique_ptr<SDLBuffer> sdlbuffer (new SDLBuffer(sdlpos, sdlptr, sdltex, sdlview));
+    shared_ptr<SDLTeclado> sdltec (new SDLTeclado);
+    shared_ptr<SDLEvents> sdlevents (new SDLEvents(dynamics, sdltec));
 
     unique_ptr<TelaCalc> pixel_calc (new TelaCalc(dynamics, view, sdlpos, 10)); /* classe para calcular a posicao na tela */
 
@@ -46,24 +51,41 @@ int main(){
 
     sdlbuffer->det_tex("./assets/mass.png");
 
-    /* variavel para determinar se a simulacao ainda deve continuar */
     bool rodando = true;
-
-    // Variaveis para verificar eventos
-    SDL_Event evento; // eventos discretos
-    const Uint8* state = SDL_GetKeyboardState(nullptr); // estado do teclado
-
-    /* laco principal */
-    while(rodando) {
-        // Polling de eventos
-        SDL_PumpEvents(); // atualiza estado do teclado
-
-    /* verifica se o usuario clicou no 'X' para fechar a tela */
-    while (SDL_PollEvent(&evento)) {
+    SDL_Event evento;
+    while(rodando){
+        sdltec->atualiza_teclado();
+        sdlevents->polling();
+        
+        // Isso ainda preciso colocar no sdl-events
+        while (SDL_PollEvent(&evento)) {
         if (evento.type == SDL_QUIT) {
             rodando = false;
         }
     }
+
+
+
+    /* OFF POR ENQUANTO
+    //variavel para determinar se a simulacao ainda deve continuar 
+    bool rodando = true;
+    
+    // Variaveis para verificar eventos
+    SDL_Event evento; // eventos discretos
+    const Uint8* state = SDL_GetKeyboardState(nullptr); // estado do teclado
+
+    // laco principal 
+    while(rodando) {
+        // Polling de eventos
+        SDL_PumpEvents(); // atualiza estado do teclado
+       
+    // verifica se o usuario clicou no 'X' para fechar a tela 
+    while (SDL_PollEvent(&evento)) {
+        if (evento.type == SDL_QUIT) {
+            rodando = false;
+        }
+    }*/
+
     /* realiza uma iteracao de simulacao */
     modelo->calculo();
     pixel_calc->position();

@@ -29,7 +29,7 @@ Equacoes::Equacoes(shared_ptr<Dinamicos> dynamics, shared_ptr<Oscilador> oscilla
 void Equacoes::calculo(){
 
     float massa, tamanho, elasticidade, amortecimento; /* parametros do sistema */
-    float tempo, posicao, velocidade, aceleracao; /* parametros dinamicos */
+    float tempo, posicao, velocidade, aceleracao, fexterna; /* parametros dinamicos */
     float damp_ratio; /* amortecimento do oscilador */
     float forca_mola; /* forca dela */
 
@@ -47,9 +47,10 @@ void Equacoes::calculo(){
     velocidade = dynamics->get_vel();
     aceleracao = dynamics->get_accel();
     tempo = dynamics->get_tmp();
+    fexterna = dynamics->get_fext();
 
     /* calcula a forca presente na mola */
-    forca_mola = - (elasticidade*posicao) - (damp_ratio*velocidade);
+    forca_mola = - (elasticidade*posicao) - (damp_ratio*velocidade) - (fexterna);
 
     /* calcula os parametros dinamicos para a forca atual */
     aceleracao = forca_mola/massa;
