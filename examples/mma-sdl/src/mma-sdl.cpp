@@ -49,7 +49,7 @@ int main(){
     sdlrender->window_init();
     sdlrender->render_init();
 
-    sdlbuffer->det_tex("./assets/mass.png");
+    sdlbuffer->det_tex("./assets/mass.png", 40, 40);
 
     bool rodando = true;
     SDL_Event evento;

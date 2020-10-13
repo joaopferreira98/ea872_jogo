@@ -19,21 +19,15 @@ SDLBuffer::SDLBuffer(shared_ptr<SDLPosition> sdlpos, shared_ptr<SDLPointer> sdlp
     sdltextures(sdltextures),
     sdlview(sdlview)
 {
-    SDL_Rect target;
-    target.x = 0;
-    target.y = 0;
+    sdlpos->set_position(0, 0); /* posicao inicial da textura */
 }
 
 /* atualiza o buffer */
 void SDLBuffer::buffer_update(){
     sdlview->scene_clear(sdlptr->get_renderer()); /* limpa a tela atual */
 
-    /* atualiza a posicao xy do bloco com base na ultima iteracao de simulacao */
-    target.x = sdlpos->get_pix_x();
-    target.y = sdlpos->get_pix_y();
-
     /* atualiza o buffer da textura */
-    SDL_RenderCopy(sdlptr->get_renderer(), sdltextures->get_texture(), nullptr, &target);
+    SDL_RenderCopy(sdlptr->get_renderer(), sdltextures->get_texture(), nullptr, sdlpos->get_target());
 
     /* imprime na tela o conteudo atual do buffer */
     sdlview->scene_draw(sdlptr->get_renderer());
@@ -42,9 +36,10 @@ void SDLBuffer::buffer_update(){
 }
 
 /* define a textura */
-void SDLBuffer::det_tex(const char* tex_path){
+void SDLBuffer::det_tex(const char* tex_path, int width, int height){
+    sdlpos->set_dimension(width, height);
     sdltextures->set_texture(IMG_LoadTexture(sdlptr->get_renderer(), tex_path));
-    SDL_QueryTexture(sdltextures->get_texture(), nullptr, nullptr, &target.w, &target.h); /* inicializa a posicao inicial da textura */
+    SDL_QueryTexture(sdltextures->get_texture(), nullptr, nullptr, sdlpos->get_height(), sdlpos->get_width()); /* inicializa a posicao inicial da textura */
 }
 
 /* o destrutor dessa classe vai limpar o buffer */
