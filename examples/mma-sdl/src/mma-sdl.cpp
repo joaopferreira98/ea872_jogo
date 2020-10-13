@@ -27,7 +27,6 @@ int main(){
     shared_ptr<Oscilador> oscillator (new Oscilador); /* classe dos parametros do oscilador */
     shared_ptr<Visualizacao> view (new Visualizacao); /* classe para visualizacao */
     unique_ptr<Equacoes> modelo (new Equacoes(dynamics, oscillator, view)); /* classe para as equacoes */
-    unique_ptr<TelaCalc> pixel_calc (new TelaCalc(dynamics, view, 10)); /* classe para calcular a posicao na tela */
 
     /* classes do sdl */
     shared_ptr<SDLPointer> sdlptr (new SDLPointer);
@@ -37,38 +36,39 @@ int main(){
     unique_ptr<SDLRender> sdlrender (new SDLRender(sdlptr));
     unique_ptr<SDLBuffer> sdlbuffer (new SDLBuffer(sdlpos, sdlptr, sdltex, sdlview));
 
+    unique_ptr<TelaCalc> pixel_calc (new TelaCalc(dynamics, view, sdlpos, 10)); /* classe para calcular a posicao na tela */
+
     modelo->parametros_dinamicos(0.0, 10.0, 0, 0); /* parametros dinamicos iniciais da massa */
-    modelo->parametros_sistema(5.0, 10.0, 5.0, 10.0); /* parametros do oscilador */
+    modelo->parametros_sistema(5.0, 10.0, 5.0, 0); /* parametros do oscilador */
 
     sdlrender->window_init();
     sdlrender->render_init();
 
     sdlbuffer->det_tex("./assets/mass.png");
 
-    /* faz n iteracoes pra simulacao */
-    /* for (int n = 0; n <= 200; n++){
-        modelo->calculo();
-        pixel_calc->position();
-    } */
-
-    // Controlador:
+    /* variavel para determinar se a simulacao ainda deve continuar */
     bool rodando = true;
 
     // Variaveis para verificar eventos
     SDL_Event evento; // eventos discretos
     const Uint8* state = SDL_GetKeyboardState(nullptr); // estado do teclado
 
-    // Laco principal do jogo
+    /* laco principal */
     while(rodando) {
         // Polling de eventos
         SDL_PumpEvents(); // atualiza estado do teclado
 
+    /* verifica se o usuario clicou no 'X' para fechar a tela */
     while (SDL_PollEvent(&evento)) {
         if (evento.type == SDL_QUIT) {
             rodando = false;
         }
     }
-    // Desenhar a cena
+    /* realiza uma iteracao de simulacao */
+    modelo->calculo();
+    pixel_calc->position();
+
+    /* atualiza tela */
     sdlbuffer->buffer_update();
     }
 

@@ -1,5 +1,7 @@
 /* VIEW */
 
+/* esse eh o metodo antigo de visualizacao, apenas para fins de debug */
+
 /* pra evitar conflitos de nome */
 #pragma once
 

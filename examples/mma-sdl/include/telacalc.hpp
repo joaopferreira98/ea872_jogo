@@ -22,6 +22,6 @@ class TelaCalc{
         shared_ptr<SDLPosition> pixposition;
         int escala; /* define a escala de exibicao */
     public:
-        TelaCalc(shared_ptr<Dinamicos> dynamics, shared_ptr<Visualizacao> view, int escala); /* inicializa as classes necessarias e salva a escala */
+        TelaCalc(shared_ptr<Dinamicos> dynamics, shared_ptr<Visualizacao> view, shared_ptr<SDLPosition> pixposition, int escala); /* inicializa as classes necessarias e salva a escala */
         void position(); /* calcula a posicao */
 };

@@ -26,8 +26,16 @@ SDLBuffer::SDLBuffer(shared_ptr<SDLPosition> sdlpos, shared_ptr<SDLPointer> sdlp
 
 /* atualiza o buffer */
 void SDLBuffer::buffer_update(){
-    sdlview->scene_clear(sdlptr->get_renderer());
-    SDL_RenderCopy(sdlptr->get_renderer(), sdltextures->get_texture(), nullptr, nullptr);
+    sdlview->scene_clear(sdlptr->get_renderer()); /* limpa a tela atual */
+
+    /* atualiza a posicao xy do bloco com base na ultima iteracao de simulacao */
+    target.x = sdlpos->get_pix_x();
+    target.y = sdlpos->get_pix_y();
+
+    /* atualiza o buffer da textura */
+    SDL_RenderCopy(sdlptr->get_renderer(), sdltextures->get_texture(), nullptr, &target);
+
+    /* imprime na tela o conteudo atual do buffer */
     sdlview->scene_draw(sdlptr->get_renderer());
 
     SDL_Delay(10);

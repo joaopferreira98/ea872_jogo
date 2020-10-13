@@ -1,5 +1,7 @@
 /* VIEW */
 
+/* esse eh o metodo antigo de visualizacao, apenas para fins de debug */
+
 /* biblioteca que essa classe utiliza */
 #include <iostream>
 
