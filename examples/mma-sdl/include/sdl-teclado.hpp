@@ -8,10 +8,7 @@
 
 
 class SDLTeclado{
-    //private:
-    	
-        
-    public:
+   public:
         const Uint8* state;// acho que tem que ser privado, mas nao funcionou no private
         SDLTeclado();
         void atualiza_teclado();

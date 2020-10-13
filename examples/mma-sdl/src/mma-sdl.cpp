@@ -45,54 +45,29 @@ int main(){
 
     modelo->parametros_dinamicos(0.0, 10.0, 0, 0); /* parametros dinamicos iniciais da massa */
     modelo->parametros_sistema(5.0, 10.0, 5.0, 0); /* parametros do oscilador */
+    
+    dynamics->set_fext(20); /* forca externa */
 
     sdlrender->window_init();
     sdlrender->render_init();
 
     sdlbuffer->det_tex("./assets/mass.png", 40, 40);
-
-    bool rodando = true;
-    SDL_Event evento;
-    while(rodando){
-        sdltec->atualiza_teclado();
-        sdlevents->polling();
-        
-        // Isso ainda preciso colocar no sdl-events
-        while (SDL_PollEvent(&evento)) {
-        if (evento.type == SDL_QUIT) {
-            rodando = false;
-        }
-    }
-
-
-
-    /* OFF POR ENQUANTO
+    
     //variavel para determinar se a simulacao ainda deve continuar 
     bool rodando = true;
-    
-    // Variaveis para verificar eventos
-    SDL_Event evento; // eventos discretos
-    const Uint8* state = SDL_GetKeyboardState(nullptr); // estado do teclado
+    // laco principal
+    while(rodando){
+        sdltec->atualiza_teclado();// atualiza estado do teclado
+        sdlevents->polling();// Polling de eventos
+        sdlevents->eventos();// verifica se o usuario clicou no 'X' para fechar a tela, esse eh o nosso unico evento 
 
-    // laco principal 
-    while(rodando) {
-        // Polling de eventos
-        SDL_PumpEvents(); // atualiza estado do teclado
-       
-    // verifica se o usuario clicou no 'X' para fechar a tela 
-    while (SDL_PollEvent(&evento)) {
-        if (evento.type == SDL_QUIT) {
-            rodando = false;
+        /* realiza uma iteracao de simulacao */
+        modelo->calculo();
+        pixel_calc->position();
+
+        /* atualiza tela */
+        sdlbuffer->buffer_update();
         }
-    }*/
-
-    /* realiza uma iteracao de simulacao */
-    modelo->calculo();
-    pixel_calc->position();
-
-    /* atualiza tela */
-    sdlbuffer->buffer_update();
-    }
 
     return 0;
 }

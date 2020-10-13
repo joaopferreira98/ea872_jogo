@@ -4,7 +4,7 @@
 #include "../include/dinamicos.hpp"
 
 Dinamicos::Dinamicos(){
-    fext = 0;
+    
 }
 
 /* define o estado dinamico atual do bloco */

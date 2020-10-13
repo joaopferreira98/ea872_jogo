@@ -14,26 +14,29 @@ SDLEvents::SDLEvents(shared_ptr<Dinamicos> dynamics, shared_ptr<SDLTeclado> sdlt
     dynamics(dynamics),
     sdltec(sdltec)
     {
-    f = dynamics->get_fext();
-    forcaext = 10.0; // forca estabelecida por nos, por enquanto.
+    /* BO, o comando comentado funciona, mas ai nao conseguimos setar uma forca qualquer */
+    //this->forcaext = 20; 
+    forcaext = dynamics->get_fext(); // essa variavel eh o problema
 }
 	
-
+//nessa funcao quando cai no caso "else" ele zera e depois nao recupero o valor da forca externa setado na main
 void SDLEvents::polling(){
-	if (sdltec->state[SDL_SCANCODE_UP]){
-        f += forcaext;
-        dynamics->set_fext(f);
+	// caso seta para cima aplicamos uma forca externa no sentido para cima
+    if (sdltec->state[SDL_SCANCODE_UP]){
+        dynamics->set_fext(forcaext);
     }
-    if (sdltec->state[SDL_SCANCODE_DOWN]){
-        f -= forcaext;
-        dynamics->set_fext(f);
+    // caso seta para baixo aplicamos uma forca externa no sentido para baixo
+    else if (sdltec->state[SDL_SCANCODE_DOWN]){
+        dynamics->set_fext(-forcaext);
     }
+    // caso em que nao acionamos a setas, nao aplicamos uma forca externa
+    else dynamics->set_fext(0);
 }
 
-/*void SDLEvents::eventos(){
-	while (SDL_PollEvent(&evento)) {
-        if (evento.type == SDL_QUIT) {
-            rodando = false;
-        }
+void SDLEvents::eventos(){
+	SDL_PollEvent(&evento);
+    
+    if (evento.type == SDL_QUIT) {
+        exit(0);
     }
-}*/
+}

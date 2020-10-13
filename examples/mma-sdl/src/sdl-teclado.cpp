@@ -7,10 +7,10 @@
 #include "../include/sdl-teclado.hpp"
 
 SDLTeclado::SDLTeclado(){
-	this->state = SDL_GetKeyboardState(nullptr);
+	this->state = SDL_GetKeyboardState(nullptr); // estado do teclado
 }
 
 void SDLTeclado::atualiza_teclado(){
-    SDL_PumpEvents(); // atualiza teclado
+    SDL_PumpEvents(); // atualiza estado do teclado
 }
 
