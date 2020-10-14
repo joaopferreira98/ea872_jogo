@@ -6,21 +6,21 @@
 #include <iostream>
 
 /* classes do simulador físico */
-#include "../include/dinamicos.hpp"
-#include "../include/oscilador.hpp"
-#include "../include/visualizacao.hpp"
-#include "../include/equacoes.hpp"
-#include "../include/telacalc.hpp"
+#include "dinamicos.hpp"
+#include "oscilador.hpp"
+#include "visualizacao.hpp"
+#include "equacoes.hpp"
+#include "telacalc.hpp"
 
 /* classes do SDL */
-#include "../include/sdl-render.hpp"
-#include "../include/sdl-ptr.hpp"
-#include "../include/sdl-textures.hpp"
-#include "../include/sdl-position.hpp"
-#include "../include/sdl-view.hpp"
-#include "../include/sdl-buffer.hpp"
-#include "../include/sdl-keystate.hpp"
-#include "../include/sdl-keyread.hpp"
+#include "sdl-render.hpp"
+#include "sdl-ptr.hpp"
+#include "sdl-textures.hpp"
+#include "sdl-position.hpp"
+#include "sdl-view.hpp"
+#include "sdl-buffer.hpp"
+#include "sdl-keystate.hpp"
+#include "sdl-keyread.hpp"
 
 /* utiliza o namespace sdl para facilitar alguns comandos */
 using namespace std;
