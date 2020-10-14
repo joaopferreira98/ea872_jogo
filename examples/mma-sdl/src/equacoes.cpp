@@ -50,7 +50,7 @@ void Equacoes::calculo(){
     fexterna = dynamics->get_fext();
 
     /* calcula a forca presente na mola */
-    forca_mola = - (elasticidade*posicao) - (damp_ratio*velocidade) - (fexterna);
+    forca_mola = - (elasticidade*posicao) - (damp_ratio*velocidade) + (fexterna);
 
     /* calcula os parametros dinamicos para a forca atual */
     aceleracao = forca_mola/massa;

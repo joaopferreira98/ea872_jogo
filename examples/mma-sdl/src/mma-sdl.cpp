@@ -19,8 +19,8 @@
 #include "../include/sdl-position.hpp"
 #include "../include/sdl-view.hpp"
 #include "../include/sdl-buffer.hpp"
-#include "../include/sdl-teclado.hpp"
-#include "../include/sdl-events.hpp"
+#include "../include/sdl-keystate.hpp"
+#include "../include/sdl-keyread.hpp"
 
 /* utiliza o namespace sdl para facilitar alguns comandos */
 using namespace std;
@@ -38,28 +38,29 @@ int main(){
     shared_ptr<SDLView> sdlview (new SDLView);
     unique_ptr<SDLRender> sdlrender (new SDLRender(sdlptr));
     unique_ptr<SDLBuffer> sdlbuffer (new SDLBuffer(sdlpos, sdlptr, sdltex, sdlview));
-    shared_ptr<SDLTeclado> sdltec (new SDLTeclado);
-    shared_ptr<SDLEvents> sdlevents (new SDLEvents(dynamics, sdltec));
+    shared_ptr<SDLKeyState> sdlkeystate (new SDLKeyState);
+    shared_ptr<SDLKeyRead> sdlkeyread (new SDLKeyRead(dynamics, sdlkeystate));
 
-    unique_ptr<TelaCalc> pixel_calc (new TelaCalc(dynamics, view, sdlpos, 10)); /* classe para calcular a posicao na tela */
+    unique_ptr<TelaCalc> pixel_calc (new TelaCalc(dynamics, view, sdlpos)); /* classe para calcular a posicao na tela */
 
-    modelo->parametros_dinamicos(0.0, 10.0, 0, 0); /* parametros dinamicos iniciais da massa */
-    modelo->parametros_sistema(5.0, 10.0, 5.0, 0); /* parametros do oscilador */
+    modelo->parametros_dinamicos(0.0, 0.0, 0, 0); /* parametros dinamicos iniciais da massa */
+    modelo->parametros_sistema(5.0, 10.0, 5.0, 10.0); /* parametros do oscilador */
     
-    dynamics->set_fext(20); /* forca externa */
-
+    /* inicializa a janela e o renderizador */
     sdlrender->window_init();
     sdlrender->render_init();
 
+    /* inicia a textura do bloco, com dimensoes 40x40 */
     sdlbuffer->det_tex("./assets/mass.png", 40, 40);
     
-    //variavel para determinar se a simulacao ainda deve continuar 
+    /* variavel para determinar se a simulacao ainda deve continuar */ 
     bool rodando = true;
-    // laco principal
+
+    /* laco principal */
     while(rodando){
-        sdltec->atualiza_teclado();// atualiza estado do teclado
-        sdlevents->polling();// Polling de eventos
-        sdlevents->eventos();// verifica se o usuario clicou no 'X' para fechar a tela, esse eh o nosso unico evento 
+        sdlkeyread->update(); /* atualiza estado do teclado */
+        sdlkeyread->polling(); /* Polling de eventos */
+        sdlkeyread->eventos(); /* verifica se o usuario clicou no 'X' para fechar a tela */ 
 
         /* realiza uma iteracao de simulacao */
         modelo->calculo();

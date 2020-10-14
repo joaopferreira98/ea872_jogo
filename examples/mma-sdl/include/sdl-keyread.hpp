@@ -2,6 +2,11 @@
 
 /* bibliotecas que essa classe utiliza em suas definicoes */
 #include <SDL2/SDL.h>
+#include <memory>
+
+/* header files que essa definicao utiliza */
+#include "../include/dinamicos.hpp"
+#include "../include/sdl-keystate.hpp"
 
 /* pra evitar conflitos de nome */
 #pragma once
@@ -9,14 +14,13 @@
 /* para simplificar alguns comandos */
 using namespace std;
 
-class SDLEvents{
+class SDLKeyRead{
     private:
-        SDL_Event evento; // eventos discretos
         shared_ptr<Dinamicos> const dynamics; 
- 		shared_ptr<SDLTeclado> const sdltec;
- 		float forcaext; // variavel responsavel por guardar o valor da forca externa
+ 		shared_ptr<SDLKeyState> const sdlkeystate;
  	public:
-        SDLEvents(shared_ptr<Dinamicos> dynamics, shared_ptr<SDLTeclado> sdltec); // inicializa estado do teclado
+        SDLKeyRead(shared_ptr<Dinamicos> dynamics, shared_ptr<SDLKeyState> sdlkeystate);
+        void update(); /* atualiza o teclado */        
         void polling(); // funcao de polling de eventos
         void eventos(); // verifica ocorrencia de eventos
 };
