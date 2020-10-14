@@ -51,7 +51,7 @@ int main(){
     sdlrender->render_init();
 
     /* inicia a textura do bloco, com dimensoes 40x40 */
-    sdlbuffer->det_tex("./assets/mass.png", 40, 40);
+    sdlbuffer->det_tex("../assets/mass.png", 40, 40);
     
     /* variavel para determinar se a simulacao ainda deve continuar */ 
     bool rodando = true;

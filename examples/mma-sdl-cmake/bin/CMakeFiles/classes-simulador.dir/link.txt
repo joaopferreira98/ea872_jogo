@@ -1,0 +1,2 @@
+/usr/bin/ar qc libclasses-simulador.a  CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.o CMakeFiles/classes-simulador.dir/src/equacoes.cpp.o CMakeFiles/classes-simulador.dir/src/oscilador.cpp.o CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o
+/usr/bin/ranlib libclasses-simulador.a
