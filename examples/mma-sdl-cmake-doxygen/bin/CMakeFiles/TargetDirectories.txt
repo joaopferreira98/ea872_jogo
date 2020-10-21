@@ -1,0 +1,5 @@
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles/rebuild_cache.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles/classes-sdl.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles/edit_cache.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles/classes-simulador.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles/Simulador-MMA-SDL.dir

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libclasses-sdl.a  CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.o CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.o CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.o CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.o CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.o CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.o CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.o CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.o
+/usr/bin/ranlib libclasses-sdl.a
