@@ -1,5 +1,7 @@
 # EA872 - NAV.io
 
+![Arte Conceitual](images/concept-art.png)
+
 Repositório para guardarmos os arquivos do nosso jogo para a disciplina de EA872.
 
 ## Ideia Geral
