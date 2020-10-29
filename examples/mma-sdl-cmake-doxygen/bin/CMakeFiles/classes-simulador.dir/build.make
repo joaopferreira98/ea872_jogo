@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pc/github/ea872_jogo/examples/mma-sdl-cmake
+CMAKE_SOURCE_DIR = /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin
+CMAKE_BINARY_DIR = /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/classes-simulador.dir/depend.make
@@ -59,68 +59,68 @@ include CMakeFiles/classes-simulador.dir/flags.make
 
 CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.o: CMakeFiles/classes-simulador.dir/flags.make
 CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.o: ../src/dinamicos.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/dinamicos.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/dinamicos.cpp
 
 CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/dinamicos.cpp > CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/dinamicos.cpp > CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.i
 
 CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/dinamicos.cpp -o CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/dinamicos.cpp -o CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.s
 
 CMakeFiles/classes-simulador.dir/src/equacoes.cpp.o: CMakeFiles/classes-simulador.dir/flags.make
 CMakeFiles/classes-simulador.dir/src/equacoes.cpp.o: ../src/equacoes.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/classes-simulador.dir/src/equacoes.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/equacoes.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/equacoes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/classes-simulador.dir/src/equacoes.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/equacoes.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/equacoes.cpp
 
 CMakeFiles/classes-simulador.dir/src/equacoes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-simulador.dir/src/equacoes.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/equacoes.cpp > CMakeFiles/classes-simulador.dir/src/equacoes.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/equacoes.cpp > CMakeFiles/classes-simulador.dir/src/equacoes.cpp.i
 
 CMakeFiles/classes-simulador.dir/src/equacoes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-simulador.dir/src/equacoes.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/equacoes.cpp -o CMakeFiles/classes-simulador.dir/src/equacoes.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/equacoes.cpp -o CMakeFiles/classes-simulador.dir/src/equacoes.cpp.s
 
 CMakeFiles/classes-simulador.dir/src/oscilador.cpp.o: CMakeFiles/classes-simulador.dir/flags.make
 CMakeFiles/classes-simulador.dir/src/oscilador.cpp.o: ../src/oscilador.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/classes-simulador.dir/src/oscilador.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/oscilador.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/oscilador.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/classes-simulador.dir/src/oscilador.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/oscilador.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/oscilador.cpp
 
 CMakeFiles/classes-simulador.dir/src/oscilador.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-simulador.dir/src/oscilador.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/oscilador.cpp > CMakeFiles/classes-simulador.dir/src/oscilador.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/oscilador.cpp > CMakeFiles/classes-simulador.dir/src/oscilador.cpp.i
 
 CMakeFiles/classes-simulador.dir/src/oscilador.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-simulador.dir/src/oscilador.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/oscilador.cpp -o CMakeFiles/classes-simulador.dir/src/oscilador.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/oscilador.cpp -o CMakeFiles/classes-simulador.dir/src/oscilador.cpp.s
 
 CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o: CMakeFiles/classes-simulador.dir/flags.make
 CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o: ../src/telacalc.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/telacalc.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/telacalc.cpp
 
 CMakeFiles/classes-simulador.dir/src/telacalc.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-simulador.dir/src/telacalc.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/telacalc.cpp > CMakeFiles/classes-simulador.dir/src/telacalc.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/telacalc.cpp > CMakeFiles/classes-simulador.dir/src/telacalc.cpp.i
 
 CMakeFiles/classes-simulador.dir/src/telacalc.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-simulador.dir/src/telacalc.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/telacalc.cpp -o CMakeFiles/classes-simulador.dir/src/telacalc.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/telacalc.cpp -o CMakeFiles/classes-simulador.dir/src/telacalc.cpp.s
 
 CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o: CMakeFiles/classes-simulador.dir/flags.make
 CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o: ../src/visualizacao.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/visualizacao.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/visualizacao.cpp
 
 CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/visualizacao.cpp > CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/visualizacao.cpp > CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.i
 
 CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/visualizacao.cpp -o CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/visualizacao.cpp -o CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.s
 
 # Object files for target classes-simulador
 classes__simulador_OBJECTS = \
@@ -140,7 +140,7 @@ libclasses-simulador.a: CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o
 libclasses-simulador.a: CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o
 libclasses-simulador.a: CMakeFiles/classes-simulador.dir/build.make
 libclasses-simulador.a: CMakeFiles/classes-simulador.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libclasses-simulador.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libclasses-simulador.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/classes-simulador.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/classes-simulador.dir/link.txt --verbose=$(VERBOSE)
 
@@ -154,6 +154,6 @@ CMakeFiles/classes-simulador.dir/clean:
 .PHONY : CMakeFiles/classes-simulador.dir/clean
 
 CMakeFiles/classes-simulador.dir/depend:
-	cd /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pc/github/ea872_jogo/examples/mma-sdl-cmake /home/pc/github/ea872_jogo/examples/mma-sdl-cmake /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin /home/pc/github/ea872_jogo/examples/mma-sdl-cmake/bin/CMakeFiles/classes-simulador.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/classes-simulador.dir/depend
 

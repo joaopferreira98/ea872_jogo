@@ -26,15 +26,15 @@ SDLRender::SDLRender(SDLPointer &sdlptr):
 
 /* o destrutor encerra esses processos */
 SDLRender::~SDLRender(){
-    SDL_DestroyRenderer(sdlptr->get_renderer());
-    SDL_DestroyWindow(sdlptr->get_window());
+    SDL_DestroyRenderer(sdlptr.get_renderer());
+    SDL_DestroyWindow(sdlptr.get_window());
     SDL_Quit();
 }
 
 int SDLRender::window_init(){
     /* inicializa a janela com os parametros definidos */
-    sdlptr->set_window(nullptr);
-    sdlptr->set_window(SDL_CreateWindow("Simulador de Sistema Massa-Mola-Amortecedor",
+    sdlptr.set_window(nullptr);
+    sdlptr.set_window(SDL_CreateWindow("Simulador de Sistema Massa-Mola-Amortecedor",
     SDL_WINDOWPOS_UNDEFINED,
     SDL_WINDOWPOS_UNDEFINED,
     SCREEN_WIDTH,
@@ -42,7 +42,7 @@ int SDLRender::window_init(){
     SDL_WINDOW_SHOWN));
 
     /* checa se teve algum problema na hora de criar a janela */
-    if (sdlptr->get_window() == nullptr){
+    if (sdlptr.get_window() == nullptr){
         cout << SDL_GetError();
         SDL_Quit();
         return 1;
@@ -52,12 +52,12 @@ int SDLRender::window_init(){
 
 int SDLRender::render_init(){
     /* inicializa o renderer com os parametros definidos */
-    sdlptr->set_renderer(SDL_CreateRenderer(sdlptr->get_window(), -1,
+    sdlptr.set_renderer(SDL_CreateRenderer(sdlptr.get_window(), -1,
     SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC));
 
     /* checa se houve algum problema na hora de criar o renderer */
-    if (sdlptr->get_renderer() == nullptr){ 
-        SDL_DestroyWindow(sdlptr->get_window());
+    if (sdlptr.get_renderer() == nullptr){ 
+        SDL_DestroyWindow(sdlptr.get_window());
         cout << SDL_GetError();
         SDL_Quit();
         return 1;

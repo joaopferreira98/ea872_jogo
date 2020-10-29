@@ -6,3 +6,31 @@
 
 #IncludeRegexTransform: 
 
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/dinamicos.hpp
+
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/sdl-keyread.hpp
+SDL2/SDL.h
+-
+memory
+-
+../include/dinamicos.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/dinamicos.hpp
+../include/sdl-keystate.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/sdl-keystate.hpp
+
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/sdl-keystate.hpp
+SDL2/SDL.h
+-
+
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keyread.cpp
+SDL2/SDL.h
+-
+memory
+-
+../include/sdl-keyread.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/sdl-keyread.hpp
+../include/dinamicos.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/dinamicos.hpp
+../include/sdl-keystate.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/sdl-keystate.hpp
+

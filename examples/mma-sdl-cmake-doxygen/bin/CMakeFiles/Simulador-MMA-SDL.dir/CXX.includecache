@@ -84,7 +84,7 @@ sdl-position.hpp
 
 ../include/visualizacao.hpp
 
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/mma-sdl.cpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/mma-sdl.cpp
 memory
 -
 SDL2/SDL.h
@@ -92,29 +92,29 @@ SDL2/SDL.h
 iostream
 -
 dinamicos.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/dinamicos.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/dinamicos.hpp
 oscilador.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/oscilador.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/oscilador.hpp
 visualizacao.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/visualizacao.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/visualizacao.hpp
 equacoes.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/equacoes.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/equacoes.hpp
 telacalc.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/telacalc.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/telacalc.hpp
 sdl-render.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/sdl-render.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-render.hpp
 sdl-ptr.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/sdl-ptr.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-ptr.hpp
 sdl-textures.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/sdl-textures.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-textures.hpp
 sdl-position.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/sdl-position.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-position.hpp
 sdl-view.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/sdl-view.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-view.hpp
 sdl-buffer.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/sdl-buffer.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-buffer.hpp
 sdl-keystate.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/sdl-keystate.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keystate.hpp
 sdl-keyread.hpp
-/home/pc/github/ea872_jogo/examples/mma-sdl-cmake/src/sdl-keyread.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keyread.hpp
 

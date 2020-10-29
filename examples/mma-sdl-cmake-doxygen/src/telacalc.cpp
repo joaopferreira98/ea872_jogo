@@ -13,7 +13,7 @@
 using namespace std;
 
 /* inicializa as classes necessarias e salva a escala escolhida */
-TelaCalc::TelaCalc(shared_ptr<Dinamicos> dynamics, shared_ptr<Visualizacao> view, shared_ptr<SDLPosition> pixposition):
+TelaCalc::TelaCalc(Dinamicos &dynamics, Visualizacao &view, SDLPosition &pixposition):
     dynamics(dynamics),
     view(view),
     pixposition(pixposition)
@@ -30,8 +30,8 @@ void TelaCalc::position(){
     int pos_x = width/2;
     int pos_y = height/2;
 
-    pos_y+=escala*dynamics->get_pos();
+    pos_y+=escala*dynamics.get_pos();
 
     // view->pixel_pos(pos_x, pos_y); /* exibe a posicao que o bloco estaria */
-    pixposition->set_position(pos_x, pos_y);
+    pixposition.set_position(pos_x, pos_y);
 }

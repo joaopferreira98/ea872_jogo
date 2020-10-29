@@ -34,10 +34,10 @@ void Equacoes::calculo(){
     float forca_mola; /* forca dela */
 
     /* pega os parametros do sistema que foram determinados previamente */
-    massa = oscillator->get_mass();
-    tamanho = oscillator->get_tam();
-    elasticidade = oscillator->get_elast();
-    amortecimento = oscillator->get_dmp();
+    massa = oscillator.get_mass();
+    tamanho = oscillator.get_tam();
+    elasticidade = oscillator.get_elast();
+    amortecimento = oscillator.get_dmp();
 
     /* calcula o amortecimento do oscilador */
     damp_ratio = amortecimento / (2*sqrt(massa*elasticidade));
@@ -64,7 +64,7 @@ void Equacoes::calculo(){
 
 /* define os parametros do oscilador do sistema */
 void Equacoes::parametros_sistema(float m_cfg, float t_cfg, float e_cfg, float d_cfg){
-    oscillator->new_oscillator(m_cfg, t_cfg, e_cfg, d_cfg);
+    oscillator.new_oscillator(m_cfg, t_cfg, e_cfg, d_cfg);
 }
 
 /* determina o estado dinamico atual do bloco */

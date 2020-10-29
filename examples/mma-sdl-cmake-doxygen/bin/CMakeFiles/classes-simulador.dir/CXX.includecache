@@ -6,3 +6,33 @@
 
 #IncludeRegexTransform: 
 
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/dinamicos.hpp
+
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/sdl-position.hpp
+SDL2/SDL.h
+-
+
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/telacalc.hpp
+memory
+-
+dinamicos.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/dinamicos.hpp
+visualizacao.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/visualizacao.hpp
+sdl-position.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/sdl-position.hpp
+
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/visualizacao.hpp
+
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/telacalc.cpp
+memory
+-
+../include/telacalc.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/telacalc.hpp
+../include/dinamicos.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/dinamicos.hpp
+../include/visualizacao.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/visualizacao.hpp
+../include/sdl-position.hpp
+/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include/sdl-position.hpp
+
