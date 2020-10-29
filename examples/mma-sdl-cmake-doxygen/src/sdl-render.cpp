@@ -16,7 +16,7 @@ const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
 
 /* o construtor da classe incializa o modulo view do SDL */
-SDLRender::SDLRender(shared_ptr<SDLPointer> sdlptr):
+SDLRender::SDLRender(SDLPointer &sdlptr):
     sdlptr(sdlptr)    
 {
     if ((SDL_Init(SDL_INIT_VIDEO)) < 0 ){

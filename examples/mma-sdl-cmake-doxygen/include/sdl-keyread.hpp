@@ -16,10 +16,10 @@ using namespace std;
 
 class SDLKeyRead{
     private:
-        shared_ptr<Dinamicos> const dynamics; 
- 		shared_ptr<SDLKeyState> const sdlkeystate;
+        Dinamicos &dynamics; 
+ 		SDLKeyState &sdlkeystate;
  	public:
-        SDLKeyRead(shared_ptr<Dinamicos> dynamics, shared_ptr<SDLKeyState> sdlkeystate);
+        SDLKeyRead(Dinamicos &dynamics, SDLKeyState &sdlkeystate);
         void update(); /* atualiza o teclado */        
         void polling(); // funcao de polling de eventos
         void eventos(); // verifica ocorrencia de eventos

@@ -15,9 +15,9 @@ using namespace std;
 
 class SDLRender{
     private:
-        shared_ptr<SDLPointer> const sdlptr;
+        SDLPointer &sdlptr;
     public:
-        SDLRender(shared_ptr<SDLPointer> sdlptr); /* inicializa o sistema do SDL */
+        SDLRender(SDLPointer &sdlptr); /* inicializa o sistema do SDL */
         int window_init(); /* inicializa a janela */
         int render_init(); /* iniciliza o renderizador */
         ~SDLRender(); /* encerra esses processos */

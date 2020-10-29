@@ -17,10 +17,10 @@ using namespace std;
 /* essa classe vai calcular a posicao na tela em pixel */
 class TelaCalc{
     private:
-        shared_ptr<Dinamicos> dynamics;
-        shared_ptr<Visualizacao> view;
-        shared_ptr<SDLPosition> pixposition;
+        Dinamicos &dynamics;
+        Visualizacao &view;
+        SDLPosition &pixposition;
     public:
-        TelaCalc(shared_ptr<Dinamicos> dynamics, shared_ptr<Visualizacao> view, shared_ptr<SDLPosition> pixposition); /* inicializa as classes necessarias */
+        TelaCalc(Dinamicos &dynamics, Visualizacao &view, SDLPosition &pixposition); /* inicializa as classes necessarias */
         void position(); /* calcula a posicao */
 };

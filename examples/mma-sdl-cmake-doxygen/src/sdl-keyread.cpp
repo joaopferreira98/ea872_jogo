@@ -10,7 +10,7 @@
 #include "../include/sdl-keystate.hpp"
 
 /* o construtor da classe incializa o estado do teclado */
-SDLKeyRead::SDLKeyRead(shared_ptr<Dinamicos> dynamics, shared_ptr<SDLKeyState> sdlkeystate):
+SDLKeyRead::SDLKeyRead(Dinamicos &dynamics, SDLKeyState &sdlkeystate):
     dynamics(dynamics),
     sdlkeystate(sdlkeystate)
     {

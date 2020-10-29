@@ -11,13 +11,13 @@ Collaboration diagram for Equacoes\+:
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=210pt]{classEquacoes__coll__graph}
+\includegraphics[width=350pt]{classEquacoes__coll__graph}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classEquacoes_a117204a7e962c9d3e26ffa24ad965dd7}{Equacoes}} (\mbox{\hyperlink{classDinamicos}{Dinamicos}} \&\mbox{\hyperlink{classEquacoes_a5f969880473f64698cdcdb8b8ef6e98f}{dynamics}}, shared\+\_\+ptr$<$ \mbox{\hyperlink{classOscilador}{Oscilador}} $>$ \mbox{\hyperlink{classEquacoes_a42005ce12512780fcf115c8b5d385006}{oscillator}}, shared\+\_\+ptr$<$ \mbox{\hyperlink{classVisualizacao}{Visualizacao}} $>$ \mbox{\hyperlink{classEquacoes_a0a37703bd6c770ac02d2982b7eabd780}{view}})
+\mbox{\hyperlink{classEquacoes_abc03777058606a152784647af01decf1}{Equacoes}} (\mbox{\hyperlink{classDinamicos}{Dinamicos}} \&\mbox{\hyperlink{classEquacoes_a5f969880473f64698cdcdb8b8ef6e98f}{dynamics}}, \mbox{\hyperlink{classOscilador}{Oscilador}} \&\mbox{\hyperlink{classEquacoes_a92332dbbddad60ba470196aef7040e47}{oscillator}}, \mbox{\hyperlink{classVisualizacao}{Visualizacao}} \&\mbox{\hyperlink{classEquacoes_a5d2b17685c12a54565934d399912eaaf}{view}})
 \item 
 void \mbox{\hyperlink{classEquacoes_a3c3e14b9aedcd69415e190154db1d4d7}{parametros\+\_\+dinamicos}} (float t\+\_\+cfg, float p\+\_\+cfg, float v\+\_\+cfg, float a\+\_\+cfg)
 \item 
@@ -30,18 +30,18 @@ void \mbox{\hyperlink{classEquacoes_a5925a2e60428ed3b341b4e09a42e479f}{calculo}}
 \item 
 \mbox{\hyperlink{classDinamicos}{Dinamicos}} \& \mbox{\hyperlink{classEquacoes_a5f969880473f64698cdcdb8b8ef6e98f}{dynamics}}
 \item 
-const shared\+\_\+ptr$<$ \mbox{\hyperlink{classOscilador}{Oscilador}} $>$ \mbox{\hyperlink{classEquacoes_a42005ce12512780fcf115c8b5d385006}{oscillator}}
+\mbox{\hyperlink{classOscilador}{Oscilador}} \& \mbox{\hyperlink{classEquacoes_a92332dbbddad60ba470196aef7040e47}{oscillator}}
 \item 
-const shared\+\_\+ptr$<$ \mbox{\hyperlink{classVisualizacao}{Visualizacao}} $>$ \mbox{\hyperlink{classEquacoes_a0a37703bd6c770ac02d2982b7eabd780}{view}}
+\mbox{\hyperlink{classVisualizacao}{Visualizacao}} \& \mbox{\hyperlink{classEquacoes_a5d2b17685c12a54565934d399912eaaf}{view}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classEquacoes_a117204a7e962c9d3e26ffa24ad965dd7}\label{classEquacoes_a117204a7e962c9d3e26ffa24ad965dd7}} 
+\mbox{\Hypertarget{classEquacoes_abc03777058606a152784647af01decf1}\label{classEquacoes_abc03777058606a152784647af01decf1}} 
 \index{Equacoes@{Equacoes}!Equacoes@{Equacoes}}
 \index{Equacoes@{Equacoes}!Equacoes@{Equacoes}}
 \doxysubsubsection{\texorpdfstring{Equacoes()}{Equacoes()}}
-{\footnotesize\ttfamily Equacoes\+::\+Equacoes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDinamicos}{Dinamicos}} \&}]{dynamics,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classOscilador}{Oscilador}} $>$}]{oscillator,  }\item[{shared\+\_\+ptr$<$ \mbox{\hyperlink{classVisualizacao}{Visualizacao}} $>$}]{view }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Equacoes\+::\+Equacoes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classDinamicos}{Dinamicos}} \&}]{dynamics,  }\item[{\mbox{\hyperlink{classOscilador}{Oscilador}} \&}]{oscillator,  }\item[{\mbox{\hyperlink{classVisualizacao}{Visualizacao}} \&}]{view }\end{DoxyParamCaption})}
 
 
 
@@ -73,17 +73,17 @@ const shared\+\_\+ptr$<$ \mbox{\hyperlink{classVisualizacao}{Visualizacao}} $>$ 
 \doxysubsubsection{\texorpdfstring{dynamics}{dynamics}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classDinamicos}{Dinamicos}}\& Equacoes\+::dynamics\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classEquacoes_a42005ce12512780fcf115c8b5d385006}\label{classEquacoes_a42005ce12512780fcf115c8b5d385006}} 
+\mbox{\Hypertarget{classEquacoes_a92332dbbddad60ba470196aef7040e47}\label{classEquacoes_a92332dbbddad60ba470196aef7040e47}} 
 \index{Equacoes@{Equacoes}!oscillator@{oscillator}}
 \index{oscillator@{oscillator}!Equacoes@{Equacoes}}
 \doxysubsubsection{\texorpdfstring{oscillator}{oscillator}}
-{\footnotesize\ttfamily const shared\+\_\+ptr$<$\mbox{\hyperlink{classOscilador}{Oscilador}}$>$ Equacoes\+::oscillator\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classOscilador}{Oscilador}}\& Equacoes\+::oscillator\hspace{0.3cm}{\ttfamily [private]}}
 
-\mbox{\Hypertarget{classEquacoes_a0a37703bd6c770ac02d2982b7eabd780}\label{classEquacoes_a0a37703bd6c770ac02d2982b7eabd780}} 
+\mbox{\Hypertarget{classEquacoes_a5d2b17685c12a54565934d399912eaaf}\label{classEquacoes_a5d2b17685c12a54565934d399912eaaf}} 
 \index{Equacoes@{Equacoes}!view@{view}}
 \index{view@{view}!Equacoes@{Equacoes}}
 \doxysubsubsection{\texorpdfstring{view}{view}}
-{\footnotesize\ttfamily const shared\+\_\+ptr$<$\mbox{\hyperlink{classVisualizacao}{Visualizacao}}$>$ Equacoes\+::view\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classVisualizacao}{Visualizacao}}\& Equacoes\+::view\hspace{0.3cm}{\ttfamily [private]}}
 
 
 

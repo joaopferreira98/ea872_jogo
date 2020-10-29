@@ -13,7 +13,7 @@
 #include "../include/sdl-view.hpp"
 
 /* o construtor dessa classe vai inicializar todas as responsaveis */
-SDLBuffer::SDLBuffer(shared_ptr<SDLPosition> sdlpos, shared_ptr<SDLPointer> sdlptr, shared_ptr<SDLTextures> sdltextures, shared_ptr<SDLView> sdlview):
+SDLBuffer::SDLBuffer(SDLPosition &sdlpos, SDLPointer &sdlptr, SDLTextures &sdltextures, SDLView &sdlview):
     sdlpos(sdlpos),
     sdlptr(sdlptr),
     sdltextures(sdltextures),

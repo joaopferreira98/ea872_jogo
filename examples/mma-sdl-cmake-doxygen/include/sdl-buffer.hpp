@@ -18,12 +18,12 @@ using namespace std;
 /* essa classe vai ser responsavel por atualizar o buffer de exibicao */
 class SDLBuffer{
     private:
-        shared_ptr<SDLPosition> const sdlpos; /* posicao na tela */
-        shared_ptr<SDLPointer> const sdlptr; /* struct do render e da janela */
-        shared_ptr<SDLTextures> const sdltextures; /* texturas */
-        shared_ptr<SDLView> const sdlview; /* visualizacao */
+        SDLPosition &sdlpos; /* posicao na tela */
+        SDLPointer &sdlptr; /* struct do render e da janela */
+        SDLTextures &sdltextures; /* texturas */
+        SDLView &sdlview; /* visualizacao */
     public:
-        SDLBuffer(shared_ptr<SDLPosition> sdlpos, shared_ptr<SDLPointer> sdlptr, shared_ptr<SDLTextures> sdltextures, shared_ptr<SDLView> sdlview);
+        SDLBuffer(SDLPosition &sdlpos, SDLPointer &sdlptr, SDLTextures &sdltextures, SDLView &sdlview);
         void buffer_update(); /* atualiza o buffer */
         void det_tex(const char* tex_path, int width, int height); /* configura a textura do bloco */
         ~SDLBuffer();

@@ -18,10 +18,10 @@ using namespace std;
 class Equacoes{
     private:
         Dinamicos &dynamics; /* precisamos dos parametros dinamicos */
-        shared_ptr<Oscilador> const oscillator; /* do oscilador */
-        shared_ptr<Visualizacao> const view; /* e de visualizacao */
+        Oscilador &oscillator; /* do oscilador */
+        Visualizacao &view; /* e de visualizacao */
     public:
-        Equacoes(Dinamicos &dynamics, shared_ptr<Oscilador> oscillator, shared_ptr<Visualizacao> view); /* inicializa as classes necessarias pra simulacao */
+        Equacoes(Dinamicos &dynamics, Oscilador &oscillator, Visualizacao &view); /* inicializa as classes necessarias pra simulacao */
         void parametros_dinamicos(float t_cfg, float p_cfg, float v_cfg, float a_cfg); /* definir o estado dinamico atual do bloco */
         void parametros_sistema(float m_cfg, float t_cfg, float e_cfg, float d_cfg); /* definir os parametros do oscilador */
         void calculo(); /* aplicar uma iteracao de simulacao */

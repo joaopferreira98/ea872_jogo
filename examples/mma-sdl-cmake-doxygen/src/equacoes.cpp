@@ -17,7 +17,7 @@
 using namespace std;
 
 /* inicializa as classes necessarias */
-Equacoes::Equacoes(Dinamicos &dynamics, shared_ptr<Oscilador> oscillator, shared_ptr<Visualizacao> view):
+Equacoes::Equacoes(Dinamicos &dynamics, Oscilador &oscillator, Visualizacao &view):
     // Lista de inicializacao
     dynamics(dynamics),
     oscillator(oscillator),

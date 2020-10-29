@@ -1,3 +1,5 @@
 <map id="SDLKeyRead" name="SDLKeyRead">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,128,141"/>
+<area shape="rect" id="node1" title=" " alt="" coords="77,307,199,428"/>
+<area shape="rect" id="node2" href="$classDinamicos.html" title=" " alt="" coords="5,5,121,244"/>
+<area shape="rect" id="node3" href="$classSDLKeyState.html" title=" " alt="" coords="145,27,283,222"/>
 </map>
