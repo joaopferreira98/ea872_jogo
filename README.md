@@ -4,6 +4,10 @@
 
 Repositório para guardarmos os arquivos do nosso jogo para a disciplina de EA872.
 
+## Para compilar
+
+Executar o comando **cmake ../** na pasta **/bin** e depois executar o **make** nessa pasta. O executável do jogo é o arquivo **NAV.io-Local**.
+
 ## Ideia Geral
 
 Jogo competitivo, cada um por si, em que o objetivo é acumular mais pontos possíveis em um determinado tempo (cerca de 10 minutos). Os pontos são obtidos ao acertar tiros e destruir naves de outros jogadores.

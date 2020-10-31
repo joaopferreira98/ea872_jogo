@@ -32,3 +32,9 @@ SDL2/SDL.h
 ../include/sdl-position.hpp
 /home/pc/github/ea872_jogo/include/sdl-position.hpp
 
+/home/pc/github/ea872_jogo/src/sdl-keystate.cpp
+SDL2/SDL.h
+-
+../include/sdl-keystate.hpp
+/home/pc/github/ea872_jogo/include/sdl-keystate.hpp
+
