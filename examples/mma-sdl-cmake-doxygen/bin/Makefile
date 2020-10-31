@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen
+CMAKE_SOURCE_DIR = /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin
+CMAKE_BINARY_DIR = /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -109,6 +109,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named doc
+
+# Build rule for target.
+doc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doc
+.PHONY : doc
+
+# fast build rule for target.
+doc/fast:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+.PHONY : doc/fast
 
 #=============================================================================
 # Target rules for targets named classes-sdl
@@ -534,6 +547,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... doc"
 	@echo "... classes-sdl"
 	@echo "... edit_cache"
 	@echo "... classes-simulador"

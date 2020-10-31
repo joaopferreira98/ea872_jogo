@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "CMakeDoxyfile.in"
+  "CMakeDoxygenDefaults.cmake"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeSystem.cmake"
@@ -88,6 +90,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/share/cmake-3.16/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
   "/usr/share/cmake-3.16/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
   "/usr/share/cmake-3.16/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+  "/usr/share/cmake-3.16/Modules/FindDoxygen.cmake"
+  "/usr/share/cmake-3.16/Modules/FindPackageHandleStandardArgs.cmake"
+  "/usr/share/cmake-3.16/Modules/FindPackageMessage.cmake"
   "/usr/share/cmake-3.16/Modules/Internal/CMakeCheckCompilerFlag.cmake"
   "/usr/share/cmake-3.16/Modules/Internal/FeatureTesting.cmake"
   "/usr/share/cmake-3.16/Modules/Platform/Linux-Determine-CXX.cmake"
@@ -111,11 +116,13 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.3/CMakeCXXCompiler.cmake"
+  "Doxyfile.doc"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/doc.dir/DependInfo.cmake"
   "CMakeFiles/classes-sdl.dir/DependInfo.cmake"
   "CMakeFiles/classes-simulador.dir/DependInfo.cmake"
   "CMakeFiles/Simulador-MMA-SDL.dir/DependInfo.cmake"

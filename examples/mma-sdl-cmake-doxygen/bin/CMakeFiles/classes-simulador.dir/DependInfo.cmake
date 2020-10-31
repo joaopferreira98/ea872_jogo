@@ -4,11 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/dinamicos.cpp" "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.o"
-  "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/equacoes.cpp" "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/equacoes.cpp.o"
-  "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/oscilador.cpp" "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/oscilador.cpp.o"
-  "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/telacalc.cpp" "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o"
-  "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/visualizacao.cpp" "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o"
+  "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/dinamicos.cpp" "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/dinamicos.cpp.o"
+  "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/equacoes.cpp" "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/equacoes.cpp.o"
+  "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/oscilador.cpp" "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/oscilador.cpp.o"
+  "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/telacalc.cpp" "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/telacalc.cpp.o"
+  "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/visualizacao.cpp" "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/src/visualizacao.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,5 +1,6 @@
-/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/rebuild_cache.dir
-/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-sdl.dir
-/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/edit_cache.dir
-/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir
-/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/Simulador-MMA-SDL.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/rebuild_cache.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/doc.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-sdl.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/edit_cache.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir
+/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/Simulador-MMA-SDL.dir

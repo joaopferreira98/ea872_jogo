@@ -44,10 +44,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen
+CMAKE_SOURCE_DIR = /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin
+CMAKE_BINARY_DIR = /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -65,11 +65,39 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/doc.dir/clean
 clean: CMakeFiles/classes-sdl.dir/clean
 clean: CMakeFiles/classes-simulador.dir/clean
 clean: CMakeFiles/Simulador-MMA-SDL.dir/clean
-
+	$(CMAKE_COMMAND) -P CMakeFiles/cmake_directory_clean.cmake
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/doc.dir
+
+# All Build rule for target.
+CMakeFiles/doc.dir/all:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/depend
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=18 "Built target doc"
+.PHONY : CMakeFiles/doc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/doc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/doc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 0
+.PHONY : CMakeFiles/doc.dir/rule
+
+# Convenience name for target.
+doc: CMakeFiles/doc.dir/rule
+
+.PHONY : doc
+
+# clean rule for target.
+CMakeFiles/doc.dir/clean:
+	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/clean
+.PHONY : CMakeFiles/doc.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/classes-sdl.dir
@@ -78,14 +106,14 @@ clean: CMakeFiles/Simulador-MMA-SDL.dir/clean
 CMakeFiles/classes-sdl.dir/all:
 	$(MAKE) -f CMakeFiles/classes-sdl.dir/build.make CMakeFiles/classes-sdl.dir/depend
 	$(MAKE) -f CMakeFiles/classes-sdl.dir/build.make CMakeFiles/classes-sdl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target classes-sdl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=3,4,5,6,7,8,9,10,11 "Built target classes-sdl"
 .PHONY : CMakeFiles/classes-sdl.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/classes-sdl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/classes-sdl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 0
 .PHONY : CMakeFiles/classes-sdl.dir/rule
 
 # Convenience name for target.
@@ -105,14 +133,14 @@ CMakeFiles/classes-sdl.dir/clean:
 CMakeFiles/classes-simulador.dir/all:
 	$(MAKE) -f CMakeFiles/classes-simulador.dir/build.make CMakeFiles/classes-simulador.dir/depend
 	$(MAKE) -f CMakeFiles/classes-simulador.dir/build.make CMakeFiles/classes-simulador.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=12,13,14,15,16,17 "Built target classes-simulador"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=12,13,14,15,16,17 "Built target classes-simulador"
 .PHONY : CMakeFiles/classes-simulador.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/classes-simulador.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/classes-simulador.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 0
 .PHONY : CMakeFiles/classes-simulador.dir/rule
 
 # Convenience name for target.
@@ -133,14 +161,14 @@ CMakeFiles/Simulador-MMA-SDL.dir/all: CMakeFiles/classes-sdl.dir/all
 CMakeFiles/Simulador-MMA-SDL.dir/all: CMakeFiles/classes-simulador.dir/all
 	$(MAKE) -f CMakeFiles/Simulador-MMA-SDL.dir/build.make CMakeFiles/Simulador-MMA-SDL.dir/depend
 	$(MAKE) -f CMakeFiles/Simulador-MMA-SDL.dir/build.make CMakeFiles/Simulador-MMA-SDL.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=1,2 "Built target Simulador-MMA-SDL"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=1,2 "Built target Simulador-MMA-SDL"
 .PHONY : CMakeFiles/Simulador-MMA-SDL.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Simulador-MMA-SDL.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 17
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 17
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Simulador-MMA-SDL.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles 0
 .PHONY : CMakeFiles/Simulador-MMA-SDL.dir/rule
 
 # Convenience name for target.

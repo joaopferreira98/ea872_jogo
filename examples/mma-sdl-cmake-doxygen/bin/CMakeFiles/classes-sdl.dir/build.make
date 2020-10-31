@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen
+CMAKE_SOURCE_DIR = /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin
+CMAKE_BINARY_DIR = /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/classes-sdl.dir/depend.make
@@ -59,107 +59,107 @@ include CMakeFiles/classes-sdl.dir/flags.make
 
 CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.o: CMakeFiles/classes-sdl.dir/flags.make
 CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.o: ../src/sdl-render.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-render.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-render.cpp
 
 CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-render.cpp > CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-render.cpp > CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.i
 
 CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-render.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-render.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-render.cpp.s
 
 CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.o: CMakeFiles/classes-sdl.dir/flags.make
 CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.o: ../src/sdl-textures.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-textures.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-textures.cpp
 
 CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-textures.cpp > CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-textures.cpp > CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.i
 
 CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-textures.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-textures.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-textures.cpp.s
 
 CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.o: CMakeFiles/classes-sdl.dir/flags.make
 CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.o: ../src/sdl-position.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-position.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-position.cpp
 
 CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-position.cpp > CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-position.cpp > CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.i
 
 CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-position.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-position.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-position.cpp.s
 
 CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.o: CMakeFiles/classes-sdl.dir/flags.make
 CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.o: ../src/sdl-view.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-view.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-view.cpp
 
 CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-view.cpp > CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-view.cpp > CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.i
 
 CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-view.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-view.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-view.cpp.s
 
 CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.o: CMakeFiles/classes-sdl.dir/flags.make
 CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.o: ../src/sdl-ptr.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-ptr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-ptr.cpp
 
 CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-ptr.cpp > CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-ptr.cpp > CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.i
 
 CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-ptr.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-ptr.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-ptr.cpp.s
 
 CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.o: CMakeFiles/classes-sdl.dir/flags.make
 CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.o: ../src/sdl-buffer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-buffer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-buffer.cpp
 
 CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-buffer.cpp > CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-buffer.cpp > CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.i
 
 CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-buffer.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-buffer.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-buffer.cpp.s
 
 CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.o: CMakeFiles/classes-sdl.dir/flags.make
 CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.o: ../src/sdl-keyread.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keyread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keyread.cpp
 
 CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keyread.cpp > CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keyread.cpp > CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.i
 
 CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keyread.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keyread.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.s
 
 CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.o: CMakeFiles/classes-sdl.dir/flags.make
 CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.o: ../src/sdl-keystate.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.o -c /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keystate.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.o -c /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keystate.cpp
 
 CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keystate.cpp > CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keystate.cpp > CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.i
 
 CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keystate.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/sdl-keystate.cpp -o CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.s
 
 # Object files for target classes-sdl
 classes__sdl_OBJECTS = \
@@ -185,7 +185,7 @@ libclasses-sdl.a: CMakeFiles/classes-sdl.dir/src/sdl-keyread.cpp.o
 libclasses-sdl.a: CMakeFiles/classes-sdl.dir/src/sdl-keystate.cpp.o
 libclasses-sdl.a: CMakeFiles/classes-sdl.dir/build.make
 libclasses-sdl.a: CMakeFiles/classes-sdl.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libclasses-sdl.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX static library libclasses-sdl.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/classes-sdl.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/classes-sdl.dir/link.txt --verbose=$(VERBOSE)
 
@@ -199,6 +199,6 @@ CMakeFiles/classes-sdl.dir/clean:
 .PHONY : CMakeFiles/classes-sdl.dir/clean
 
 CMakeFiles/classes-sdl.dir/depend:
-	cd /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin /home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-sdl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin /home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-sdl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/classes-sdl.dir/depend
 

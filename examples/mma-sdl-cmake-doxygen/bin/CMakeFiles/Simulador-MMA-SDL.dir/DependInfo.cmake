@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/mma-sdl.cpp" "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/Simulador-MMA-SDL.dir/src/mma-sdl.cpp.o"
+  "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/src/mma-sdl.cpp" "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/Simulador-MMA-SDL.dir/src/mma-sdl.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -16,8 +16,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/DependInfo.cmake"
-  "/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-sdl.dir/DependInfo.cmake"
+  "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-simulador.dir/DependInfo.cmake"
+  "/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/bin/CMakeFiles/classes-sdl.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

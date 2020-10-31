@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/include -I/home/joao/ea872_jogo/examples/mma-sdl-cmake-doxygen/assets 
+CXX_INCLUDES = -I/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/include -I/home/pc/github/ea872_jogo/examples/mma-sdl-cmake-doxygen/assets 
 
