@@ -8,6 +8,8 @@ Repositório para guardarmos os arquivos do nosso jogo para a disciplina de EA87
 
 Executar o comando **cmake ../** na pasta **/bin** e depois executar o **make** nessa pasta. O executável do jogo é o arquivo **NAV.io-Local**.
 
+Para atualizar os arquivos do **Doxygen**, é preciso rodar o comando **doxygen Doxyfile** na pasta raiz do projeto.
+
 ## Ideia Geral
 
 Jogo competitivo, cada um por si, em que o objetivo é acumular mais pontos possíveis em um determinado tempo (cerca de 10 minutos). Os pontos são obtidos ao acertar tiros e destruir naves de outros jogadores.
