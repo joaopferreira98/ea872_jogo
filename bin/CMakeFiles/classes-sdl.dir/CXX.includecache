@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pc/github/ea872_jogo/include/sdl-keyread.hpp
+SDL2/SDL.h
+-
+../include/sdl-keystate.hpp
+/home/pc/github/ea872_jogo/include/sdl-keystate.hpp
+../include/sdl-position.hpp
+/home/pc/github/ea872_jogo/include/sdl-position.hpp
+
+/home/pc/github/ea872_jogo/include/sdl-keystate.hpp
+SDL2/SDL.h
+-
+
+/home/pc/github/ea872_jogo/include/sdl-position.hpp
+SDL2/SDL.h
+-
+
+/home/pc/github/ea872_jogo/src/sdl-keyread.cpp
+SDL2/SDL.h
+-
+../include/sdl-keyread.hpp
+/home/pc/github/ea872_jogo/include/sdl-keyread.hpp
+../include/sdl-keystate.hpp
+/home/pc/github/ea872_jogo/include/sdl-keystate.hpp
+../include/sdl-position.hpp
+/home/pc/github/ea872_jogo/include/sdl-position.hpp
+
