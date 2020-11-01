@@ -43,3 +43,18 @@ int SDLKeyState::get_arrow_down(){
 int SDLKeyState::get_arrow_up(){
     return state[SDL_SCANCODE_UP];
 }
+
+/* retorna o estado da seta para esquerda */
+int SDLKeyState::get_arrow_left(){
+    return state[SDL_SCANCODE_LEFT];
+}
+
+/* retorna o estado da seta para direita */
+int SDLKeyState::get_arrow_right(){
+    return state[SDL_SCANCODE_RIGHT];
+}
+
+/* retorna o estado da tecla espaco */
+int SDLKeyState::get_key_space(){
+    return state[SDL_SCANCODE_SPACE];
+}

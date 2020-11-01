@@ -54,25 +54,25 @@ SDL2/SDL_image.h
 SDL2/SDL.h
 -
 
-/home/pc/github/ea872_jogo/src/main.cpp
+/home/joao/ea872_jogo/src/main.cpp
 SDL2/SDL.h
 -
 iostream
 -
 sdl-render.hpp
-/home/pc/github/ea872_jogo/src/sdl-render.hpp
+/home/joao/ea872_jogo/src/sdl-render.hpp
 sdl-ptr.hpp
-/home/pc/github/ea872_jogo/src/sdl-ptr.hpp
+/home/joao/ea872_jogo/src/sdl-ptr.hpp
 sdl-textures.hpp
-/home/pc/github/ea872_jogo/src/sdl-textures.hpp
+/home/joao/ea872_jogo/src/sdl-textures.hpp
 sdl-position.hpp
-/home/pc/github/ea872_jogo/src/sdl-position.hpp
+/home/joao/ea872_jogo/src/sdl-position.hpp
 sdl-view.hpp
-/home/pc/github/ea872_jogo/src/sdl-view.hpp
+/home/joao/ea872_jogo/src/sdl-view.hpp
 sdl-buffer.hpp
-/home/pc/github/ea872_jogo/src/sdl-buffer.hpp
+/home/joao/ea872_jogo/src/sdl-buffer.hpp
 sdl-keystate.hpp
-/home/pc/github/ea872_jogo/src/sdl-keystate.hpp
+/home/joao/ea872_jogo/src/sdl-keystate.hpp
 sdl-keyread.hpp
-/home/pc/github/ea872_jogo/src/sdl-keyread.hpp
+/home/joao/ea872_jogo/src/sdl-keyread.hpp
 

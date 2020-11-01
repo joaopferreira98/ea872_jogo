@@ -30,9 +30,24 @@ void SDLKeyRead::polling(){
         sdlpos.set_position(sdlpos.get_pix_x(), sdlpos.get_pix_y() - passo);
     }
 
-    /* caso seta para baixo aplicamos uma forca externa no sentido para baixo */
+    /* caso seta para baixo movimentamos a nave pra baixo */
     else if (sdlkeystate.get_arrow_down()){
         sdlpos.set_position(sdlpos.get_pix_x(), sdlpos.get_pix_y() + passo);
+    }
+
+    /* caso seta para esquerda movimentamos a nave pra esquerda */
+    else if (sdlkeystate.get_arrow_left()){
+        sdlpos.set_position(sdlpos.get_pix_x() - passo, sdlpos.get_pix_y());
+    }
+
+    /* caso seta para direita movimentamos a nave pra direita */
+    else if (sdlkeystate.get_arrow_right()){
+        sdlpos.set_position(sdlpos.get_pix_x() + passo, sdlpos.get_pix_y());
+    }
+
+    /* caso acionada tecla espaco a nave atira */
+    else if (sdlkeystate.get_key_space()){
+        /* assim que definirmos os modelos */
     }
 }
 

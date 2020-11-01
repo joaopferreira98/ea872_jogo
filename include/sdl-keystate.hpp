@@ -20,4 +20,7 @@ class SDLKeyState{
                 Uint32 get_event_type(); /* retorna o tipo de evento */
                 int get_arrow_down(); /* retorna o estado da seta para baixo */
                 int get_arrow_up(); /* retorna o estado da seta para cima */
+                int get_arrow_left(); /* retorna o estado da seta para esquerda */
+                int get_arrow_right(); /* retorna o estado da seta para direita */
+                int get_key_space(); /* retorna o estado da tecla espaco */
 };

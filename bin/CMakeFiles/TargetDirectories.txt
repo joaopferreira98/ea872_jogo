@@ -1,5 +1,5 @@
-/home/pc/github/ea872_jogo/bin/CMakeFiles/rebuild_cache.dir
-/home/pc/github/ea872_jogo/bin/CMakeFiles/doc.dir
-/home/pc/github/ea872_jogo/bin/CMakeFiles/classes-sdl.dir
-/home/pc/github/ea872_jogo/bin/CMakeFiles/edit_cache.dir
-/home/pc/github/ea872_jogo/bin/CMakeFiles/NAV.io-Local.dir
+/home/joao/ea872_jogo/bin/CMakeFiles/rebuild_cache.dir
+/home/joao/ea872_jogo/bin/CMakeFiles/doc.dir
+/home/joao/ea872_jogo/bin/CMakeFiles/classes-sdl.dir
+/home/joao/ea872_jogo/bin/CMakeFiles/edit_cache.dir
+/home/joao/ea872_jogo/bin/CMakeFiles/NAV.io-Local.dir

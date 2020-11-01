@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pc/github/ea872_jogo/include -I/home/pc/github/ea872_jogo/assets 
+CXX_INCLUDES = -I/home/joao/ea872_jogo/include -I/home/joao/ea872_jogo/assets 
 

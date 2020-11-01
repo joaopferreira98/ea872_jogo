@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pc/github/ea872_jogo
+CMAKE_SOURCE_DIR = /home/joao/ea872_jogo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pc/github/ea872_jogo/bin
+CMAKE_BINARY_DIR = /home/joao/ea872_jogo/bin
 
 # Utility rule file for doc.
 
@@ -54,9 +54,9 @@ CMAKE_BINARY_DIR = /home/pc/github/ea872_jogo/bin
 include CMakeFiles/doc.dir/progress.make
 
 CMakeFiles/doc: Doxyfile.doc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pc/github/ea872_jogo/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generate API documentation for doc"
-	cd /home/pc/github/ea872_jogo && /usr/bin/cmake -E make_directory /home/pc/github/ea872_jogo/bin
-	cd /home/pc/github/ea872_jogo && /usr/bin/doxygen /home/pc/github/ea872_jogo/bin/Doxyfile.doc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joao/ea872_jogo/bin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generate API documentation for doc"
+	cd /home/joao/ea872_jogo && /usr/bin/cmake -E make_directory /home/joao/ea872_jogo/bin
+	cd /home/joao/ea872_jogo && /usr/bin/doxygen /home/joao/ea872_jogo/bin/Doxyfile.doc
 
 doc: CMakeFiles/doc
 doc: CMakeFiles/doc.dir/build.make
@@ -73,6 +73,6 @@ CMakeFiles/doc.dir/clean:
 .PHONY : CMakeFiles/doc.dir/clean
 
 CMakeFiles/doc.dir/depend:
-	cd /home/pc/github/ea872_jogo/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pc/github/ea872_jogo /home/pc/github/ea872_jogo /home/pc/github/ea872_jogo/bin /home/pc/github/ea872_jogo/bin /home/pc/github/ea872_jogo/bin/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joao/ea872_jogo/bin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joao/ea872_jogo /home/joao/ea872_jogo /home/joao/ea872_jogo/bin /home/joao/ea872_jogo/bin /home/joao/ea872_jogo/bin/CMakeFiles/doc.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc.dir/depend
 

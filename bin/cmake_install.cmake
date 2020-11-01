@@ -1,4 +1,4 @@
-# Install script for directory: /home/pc/github/ea872_jogo
+# Install script for directory: /home/joao/ea872_jogo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/pc/github/ea872_jogo/bin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/joao/ea872_jogo/bin/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
